@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>registration</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient>suresh.salloju@optimworks.com;</mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>140f8444-a6f7-4369-bee4-7604142eca74</testSuiteGuid>
+   <testCaseLink>
+      <guid>0d104d25-96ae-4de5-ba4f-f0c3ff4d74ea</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/verifyRegistration</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>0725f583-18bb-4e45-b84e-ff2e1b126ca9</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/RegistrationTestData</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>0725f583-18bb-4e45-b84e-ff2e1b126ca9</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>userName</value>
+         <variableId>469fb659-6361-4021-9a1f-f6b30b0ccc14</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0725f583-18bb-4e45-b84e-ff2e1b126ca9</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
+         <variableId>7fe24d65-9ab5-4e3f-9052-8c017d97d63a</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
