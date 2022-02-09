@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01 Login - Board Creation - Logout</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>37385a48-132c-47f3-9951-55bb923fb792</testCaseGuid>
+</TestCaseEntity>

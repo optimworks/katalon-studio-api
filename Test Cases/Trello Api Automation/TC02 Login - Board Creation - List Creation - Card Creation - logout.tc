@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>login into trello and then logout</description>
+   <name>TC02 Login - Board Creation - List Creation - Card Creation - logout</name>
+   <tag>trello,login->logout</tag>
+   <comment></comment>
+   <testCaseGuid>a5470083-39d7-4cbb-b904-771f3de91efa</testCaseGuid>
+</TestCaseEntity>

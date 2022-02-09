@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC09 Add an Attachment - Get the data from Attachment - Delete an Attachment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4687b463-954f-4973-a5cc-2cfc907192d3</testCaseGuid>
+</TestCaseEntity>

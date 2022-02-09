@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC10 Add Comment on Card - Update a Comment - Delete a Comment</name>
+   <tag>Trello/card</tag>
+   <comment></comment>
+   <testCaseGuid>c3b2c53e-f172-48c2-a5fe-3543f9213490</testCaseGuid>
+</TestCaseEntity>

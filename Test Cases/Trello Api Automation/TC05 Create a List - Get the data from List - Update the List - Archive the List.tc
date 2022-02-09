@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC05 Create a List - Get the data from List - Update the List - Archive the List</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bbd323ef-74c1-410d-a8b0-a8e31719c5f6</testCaseGuid>
+</TestCaseEntity>

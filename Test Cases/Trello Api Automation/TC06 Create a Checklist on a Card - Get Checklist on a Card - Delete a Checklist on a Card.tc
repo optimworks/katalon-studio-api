@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC06 Create a Checklist - Get checklist item - update a checkitem</description>
+   <name>TC06 Create a Checklist on a Card - Get Checklist on a Card - Delete a Checklist on a Card</name>
+   <tag>Trello/Checklist</tag>
+   <comment></comment>
+   <testCaseGuid>edf7a4c9-b43b-4b85-82e8-5e7253999cb4</testCaseGuid>
+</TestCaseEntity>
