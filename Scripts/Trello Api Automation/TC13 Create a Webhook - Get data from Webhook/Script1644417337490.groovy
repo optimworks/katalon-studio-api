@@ -33,6 +33,7 @@ WS.containsString(response1,boardNameVar, false, FailureHandling.CONTINUE_ON_FAI
 //Create a Webhook
 response4 = WS.sendRequest(findTestObject('Trello/Webhook/Create a webhook',[('idBoard') : idBoardVar]))
 WS.verifyResponseStatusCode(response4, 200, FailureHandling.CONTINUE_ON_FAILURE)
+def idWebhookVar = WS.getElementPropertyValue(response4, "id", FailureHandling.CONTINUE_ON_FAILURE)
 
 //  Create a List
 response2 = WS.sendRequest(findTestObject('Trello/List/Create a new list',[('urlList') : GlobalVariable.url_List, ('nameofList') : nameofListVar, ('idBoard') : idBoardVar ]))
@@ -47,3 +48,8 @@ idCardVar = WS.getElementPropertyValue(response3,"id", FailureHandling.CONTINUE_
 card_response = response3.getResponseText()
 println("\n\t"+card_response+"\n\t")
 WS.containsString(response3,cardNameVar, false, FailureHandling.CONTINUE_ON_FAILURE)
+
+// Get data from Webhook
+response5 = WS.sendRequest(findTestObject('Object Repository/Trello/Webhook/Get data from Webhook',[('idWebhook') : idWebhookVar]))
+WS.verifyResponseStatusCode(response5, 200, FailureHandling.CONTINUE_ON_FAILURE)
+
