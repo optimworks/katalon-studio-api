@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Create a Custom field</name>
+   <name>Delete a Webhook</name>
    <tag></tag>
-   <elementGuidId>994509a1-7ddb-4759-83f3-1e1aa66124c5</elementGuidId>
+   <elementGuidId>0f15b352-f3ff-4d96-a5d4-e899b59f46ab</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -11,18 +11,11 @@
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
    <httpBodyType></httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Accept</name>
-      <type>Main</type>
-      <value>application/json</value>
-   </httpHeaderProperties>
    <katalonVersion>8.2.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://api.trello.com/1/customFields?idModel=${idBoard}&amp;modelType=board&amp;name=Custom&amp;type=checkbox&amp;pos=bottom&amp;key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758&amp;options=checked</restUrl>
+   <restRequestMethod>DELETE</restRequestMethod>
+   <restUrl>https://api.trello.com/1/webhooks/${idWebhook}?key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -34,9 +27,9 @@
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>6aee5d8e-212b-4797-b920-93518bbeaf4f</id>
+      <id>e44c9832-7719-4f12-8eb0-ef99d44d8416</id>
       <masked>false</masked>
-      <name>idBoard</name>
+      <name>idWebhook</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

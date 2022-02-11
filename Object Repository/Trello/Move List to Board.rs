@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Create a Custom field</name>
+   <name>Move List to Board</name>
    <tag></tag>
-   <elementGuidId>994509a1-7ddb-4759-83f3-1e1aa66124c5</elementGuidId>
+   <elementGuidId>bc907a03-d4f1-4e28-a70e-ac4c4e4a2028</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -11,18 +11,11 @@
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
    <httpBodyType></httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Accept</name>
-      <type>Main</type>
-      <value>application/json</value>
-   </httpHeaderProperties>
    <katalonVersion>8.2.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://api.trello.com/1/customFields?idModel=${idBoard}&amp;modelType=board&amp;name=Custom&amp;type=checkbox&amp;pos=bottom&amp;key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758&amp;options=checked</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${urlList}/${idList}/idBoard?value=${idBoardMovedTo}&amp;key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -34,9 +27,23 @@
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>6aee5d8e-212b-4797-b920-93518bbeaf4f</id>
+      <id>e7fc5c01-5023-4d4b-ab00-1990a7dcaa1d</id>
       <masked>false</masked>
-      <name>idBoard</name>
+      <name>idBoardMovedTo</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.url_List</defaultValue>
+      <description></description>
+      <id>ce2697f6-84ae-473b-9c0e-c2145c8c8faf</id>
+      <masked>false</masked>
+      <name>urlList</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a128463c-b85d-444c-a896-cb36f43abd77</id>
+      <masked>false</masked>
+      <name>idList</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

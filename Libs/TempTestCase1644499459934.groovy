@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\Admin\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Trello Api Automation\\TC13 Create a Webhook\\20220209_200329\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\Admin\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Trello Api Automation\\Move all Cards in List\\20220210_185419\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Trello Api Automation/TC13 Create a Webhook', new TestCaseBinding('Test Cases/Trello Api Automation/TC13 Create a Webhook',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/Trello Api Automation/Move all Cards in List', new TestCaseBinding('Test Cases/Trello Api Automation/Move all Cards in List',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

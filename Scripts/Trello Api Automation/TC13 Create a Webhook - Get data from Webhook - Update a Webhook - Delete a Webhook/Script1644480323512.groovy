@@ -21,6 +21,7 @@ import org.openqa.selenium.Keys as Keys
 def boardNameVar = "Trello Board Creation "
 def nameofListVar = 'My List'
 def cardNameVar = 'My card'
+def descriptionVar = 'Introduction to Webhook'
 
 //  board creation
 response1 = WS.sendRequest(findTestObject('Trello/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar]))
@@ -52,4 +53,13 @@ WS.containsString(response3,cardNameVar, false, FailureHandling.CONTINUE_ON_FAIL
 // Get data from Webhook
 response5 = WS.sendRequest(findTestObject('Object Repository/Trello/Webhook/Get data from Webhook',[('idWebhook') : idWebhookVar]))
 WS.verifyResponseStatusCode(response5, 200, FailureHandling.CONTINUE_ON_FAILURE)
+
+
+// Update a Webhook
+response6 = WS.sendRequest(findTestObject('Object Repository/Trello/Webhook/Update a Webhook',[('idWebhook') : idWebhookVar, ('description') : descriptionVar]))
+WS.verifyResponseStatusCode(response6, 200, FailureHandling.CONTINUE_ON_FAILURE)
+
+// Delete a webhook
+response7 = WS.sendRequest(findTestObject('Object Repository/Trello/Webhook/Delete a Webhook',[('idWebhook') : idWebhookVar]))
+WS.verifyResponseStatusCode(response7, 200, FailureHandling.CONTINUE_ON_FAILURE)
 

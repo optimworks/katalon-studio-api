@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC13 Create a Webhook - Get data from Webhook</name>
+   <name>TC15 Move all Cards in List to different Board</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>a8fb17d1-9f7a-4bee-ab21-b41fc66ac6b6</testCaseGuid>
+   <testCaseGuid>4412bb1e-843f-4e78-a6ab-8c1a9d499962</testCaseGuid>
 </TestCaseEntity>

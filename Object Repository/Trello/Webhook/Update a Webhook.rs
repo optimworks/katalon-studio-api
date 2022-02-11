@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Create a Custom field</name>
+   <name>Update a Webhook</name>
    <tag></tag>
-   <elementGuidId>994509a1-7ddb-4759-83f3-1e1aa66124c5</elementGuidId>
+   <elementGuidId>f4b38712-dd69-4f0f-a4b6-9f59368a1452</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -11,18 +11,11 @@
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
    <httpBodyType></httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Accept</name>
-      <type>Main</type>
-      <value>application/json</value>
-   </httpHeaderProperties>
    <katalonVersion>8.2.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://api.trello.com/1/customFields?idModel=${idBoard}&amp;modelType=board&amp;name=Custom&amp;type=checkbox&amp;pos=bottom&amp;key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758&amp;options=checked</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>https://api.trello.com/1/webhooks/${idWebhook}?key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758&amp;description=${description}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -34,9 +27,16 @@
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>6aee5d8e-212b-4797-b920-93518bbeaf4f</id>
+      <id>29e9f44c-1831-4cf8-ac80-4f0c4a582316</id>
       <masked>false</masked>
-      <name>idBoard</name>
+      <name>idWebhook</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9712cd61-2fce-449c-b1ee-27523e855b1c</id>
+      <masked>false</masked>
+      <name>description</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
