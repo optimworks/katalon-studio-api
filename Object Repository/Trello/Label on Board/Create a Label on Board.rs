@@ -15,7 +15,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${urlBoard}/${idBoard}/labels?name=${name}&amp;color=${color}&amp;key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758</restUrl>
+   <restUrl>${urlBoard}/${idBoard}/labels?name=${name}&amp;color=${color}&amp;key=${key}&amp;token=${token}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -51,6 +51,20 @@
       <id>0143be24-7bb6-4df3-9eb2-fc7f8a44eeb6</id>
       <masked>false</masked>
       <name>color</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.key</defaultValue>
+      <description></description>
+      <id>3bf401cd-ce35-4317-8c82-e21466f898c6</id>
+      <masked>false</masked>
+      <name>key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.token</defaultValue>
+      <description></description>
+      <id>51b14052-e7a5-40b5-995e-b83ef31fde8b</id>
+      <masked>false</masked>
+      <name>token</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

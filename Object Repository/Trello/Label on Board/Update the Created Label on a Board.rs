@@ -15,7 +15,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>https://api.trello.com/1/labels/${idLabel}?key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758&amp;name=${updatedName}</restUrl>
+   <restUrl>https://api.trello.com/1/labels/${idLabel}?key=${key}&amp;token=${token}&amp;name=${updatedName}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -37,6 +37,20 @@
       <id>62a6254d-5395-4af3-9e31-9796a1373d4b</id>
       <masked>false</masked>
       <name>updatedName</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.key</defaultValue>
+      <description></description>
+      <id>f5e45132-2c59-415a-81d7-d4aa38108da6</id>
+      <masked>false</masked>
+      <name>key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.token</defaultValue>
+      <description></description>
+      <id>df10c3db-70b5-44c3-a62f-b11b5be1ddda</id>
+      <masked>false</masked>
+      <name>token</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

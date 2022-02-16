@@ -24,7 +24,7 @@ def boardNameVar2 = 'Board to which list needed to be moved'
 
 
 //  Board1 Creation
-response1 = WS.sendRequest(findTestObject('Trello/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar1]))
+response1 = WS.sendRequest(findTestObject('Trello/Board/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar1]))
 WS.verifyResponseStatusCode(response1, 200, FailureHandling.CONTINUE_ON_FAILURE)
 def idBoardMovedFrom = WS.getElementPropertyValue(response1, "id", FailureHandling.CONTINUE_ON_FAILURE)
 board_response = response1.getResponseText()
@@ -38,7 +38,7 @@ WS.containsString(response2,nameofListVar, false, FailureHandling.CONTINUE_ON_FA
 def listIdVar = WS.getElementPropertyValue(response2, "id", FailureHandling.CONTINUE_ON_FAILURE)
 
 //  Board2 Creation
-response4 = WS.sendRequest(findTestObject('Trello/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar2]))
+response4 = WS.sendRequest(findTestObject('Trello/Board/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar2]))
 WS.verifyResponseStatusCode(response4, 200, FailureHandling.CONTINUE_ON_FAILURE)
 def idBoardMovedToVar = WS.getElementPropertyValue(response4, "id", FailureHandling.CONTINUE_ON_FAILURE)
 WS.containsString(response4, boardNameVar2, false, FailureHandling.CONTINUE_ON_FAILURE)

@@ -15,7 +15,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${urlCard}/${idCard}/checklists?key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758</restUrl>
+   <restUrl>${urlCard}/${idCard}/checklists?key=${key}&amp;token=${token}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -32,11 +32,25 @@
       <name>urlCard</name>
    </variables>
    <variables>
+      <defaultValue>GlobalVariable.key</defaultValue>
+      <description></description>
+      <id>00463c9e-83a3-455b-be6b-de7d1b27b555</id>
+      <masked>false</masked>
+      <name>key</name>
+   </variables>
+   <variables>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>03493508-561e-4171-8659-d1dab91693e8</id>
       <masked>false</masked>
       <name>idCard</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.token</defaultValue>
+      <description></description>
+      <id>333b7514-8d21-4c01-9e72-616557346ef3</id>
+      <masked>false</masked>
+      <name>token</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

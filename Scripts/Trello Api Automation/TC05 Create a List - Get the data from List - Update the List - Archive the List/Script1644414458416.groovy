@@ -33,7 +33,7 @@ def createListRespMsg = '"name":"List1"'
 def  archiveListRespMsg = '"closed":true'
 
 //  Board Creation
-response = WS.sendRequest(findTestObject('Trello/Board Creation', [('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar ]))
+response = WS.sendRequest(findTestObject('Trello/Board/Board Creation', [('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar ]))
 WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)
 def idBoardVar = WS.getElementPropertyValue(response, "id", FailureHandling.CONTINUE_ON_FAILURE)
 WS.containsString(response,boardNameVar, false, FailureHandling.CONTINUE_ON_FAILURE)

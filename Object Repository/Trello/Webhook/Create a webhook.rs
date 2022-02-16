@@ -15,7 +15,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://api.trello.com/1/webhooks?callbackURL=https://webhook.site/fe3f95f6-f77d-4f95-9367-7c541a8dc7af&amp;idModel=${idBoard}&amp;key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758</restUrl>
+   <restUrl>https://api.trello.com/1/webhooks?callbackURL=https://webhook.site/fe3f95f6-f77d-4f95-9367-7c541a8dc7af&amp;idModel=${idBoard}&amp;key=${key}&amp;token=${token}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -30,6 +30,20 @@
       <id>ade72cb4-ec73-42d9-a06f-a03b8f6f46a8</id>
       <masked>false</masked>
       <name>idBoard</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.token</defaultValue>
+      <description></description>
+      <id>e8d263b2-42a1-4245-8013-47573e1d6a35</id>
+      <masked>false</masked>
+      <name>token</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.key</defaultValue>
+      <description></description>
+      <id>5cd9520e-7e0d-4085-8d62-00186cda6ece</id>
+      <masked>false</masked>
+      <name>key</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

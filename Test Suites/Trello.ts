@@ -16,18 +16,84 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Trello Api Automation/TC01 Login - Board Creation - Logout</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d22ec6f4-33f8-4962-a812-ea8628883b83</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>51c593d2-03aa-4753-a7de-8e67ecffeb8f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0508e38b-20aa-4e2c-a314-a2ec5998823e</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>2a05f7f9-a393-4fce-af70-bcd7fabc3d92</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Trello Api Automation/TC02 Login - Board Creation - List Creation - Card Creation - logout</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c78a90f8-b7c9-41de-919d-1796c0de3824</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7197c796-2f25-48bf-8b90-f3da46db919f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ce03a5af-f432-4f7f-acbc-65ee84ce1c03</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c58a57f3-a4d2-4248-8add-687f00143127</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4b44071b-7b5b-4045-b6ad-ab717122c922</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>5c24bd44-1168-48c4-ab9a-79a02dbaaac1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Trello Api Automation/TC03 Board Creation - Update the Board</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>62c95e12-4c47-45eb-8259-9c6dc42d9291</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b1a758e6-ed02-43df-a994-34a3746c9084</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d0b94fe7-806a-451a-92f2-1eaea0abb101</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>3ffba264-58d7-4f7e-bf2f-9b280818d121</guid>

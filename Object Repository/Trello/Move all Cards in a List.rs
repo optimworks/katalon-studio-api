@@ -15,7 +15,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${urlList}/${idOldList}/moveAllCards?idBoard=${idNewBoard}&amp;idList=${idList1}&amp;key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758</restUrl>
+   <restUrl>${urlList}/${idOldList}/moveAllCards?idBoard=${idNewBoard}&amp;idList=${idList1}&amp;key=${key}&amp;token=${token}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -51,6 +51,20 @@
       <id>06d9de8a-39e7-4ed0-9350-4d2310f131a3</id>
       <masked>false</masked>
       <name>idList1</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.key</defaultValue>
+      <description></description>
+      <id>e61606f0-469b-484c-9827-ded9a4984fb0</id>
+      <masked>false</masked>
+      <name>key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.token</defaultValue>
+      <description></description>
+      <id>384df5e6-0385-4442-bb11-b6b3fb042319</id>
+      <masked>false</masked>
+      <name>token</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

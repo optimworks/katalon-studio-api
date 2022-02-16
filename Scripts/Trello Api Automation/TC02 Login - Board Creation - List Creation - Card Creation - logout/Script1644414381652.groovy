@@ -17,21 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//vars
-emailVar = 'nikhil.tadi@gmail.com'
-passwordVar = 'bunny007'
-def boardNameVar = 'Trello Api 1'
-def nameofListVar = 'List1'
-def cardNameVar = 'My card'
 
-//  login
-response = WS.sendRequest(findTestObject('Trello/login', [('url') : GlobalVariable.trello_url, ('email') : emailVar, ('password') : passwordVar]))
-WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)// is there any way to print the costum error message
-//login_response = response.getResponseText()
-//print('\n\t'+login_response+'\n\t')
-
-//  Bard Creation
-response1 = WS.sendRequest(findTestObject('Trello/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar]))
+response1 = WS.sendRequest(findTestObject('Trello/Board/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar]))
 WS.verifyResponseStatusCode(response1, 200, FailureHandling.CONTINUE_ON_FAILURE)
 def idBoardVar = WS.getElementPropertyValue(response1, "id", FailureHandling.CONTINUE_ON_FAILURE)
 board_response = response1.getResponseText()
@@ -43,6 +30,12 @@ WS.verifyResponseStatusCode(response2, 200, FailureHandling.CONTINUE_ON_FAILURE)
 //WS.containsString(response2,createListRespMsg, false, FailureHandling.CONTINUE_ON_FAILURE)
 def listIdVar = WS.getElementPropertyValue(response2, "id", FailureHandling.CONTINUE_ON_FAILURE)
 
+//  Create a List without name
+//response7 = WS.sendRequest(findTestObject('Trello/List/Create a new list',[('urlList') : GlobalVariable.url_List, ('nameofList') : nameofListVar, ('idBoard') : idBoardVar ]))
+//WS.verifyResponseStatusCode(response7, 200, FailureHandling.CONTINUE_ON_FAILURE)
+////WS.containsString(response7,createListRespMsg, false, FailureHandling.CONTINUE_ON_FAILURE)
+//def listIdVar = WS.getElementPropertyValue(response7, "id", FailureHandling.CONTINUE_ON_FAILURE)
+
 
 //  Card Creation
 response3 = WS.sendRequest(findTestObject('Trello/Create card',[('urlCard') : GlobalVariable.url_Card,('listId') : listIdVar, ('cardName') : cardNameVar]))
@@ -51,7 +44,7 @@ card_response = response3.getResponseText()
 println("\n\t"+card_response+"\n\t")
 
 //  Delete board
-response5 = WS.sendRequest(findTestObject('Object Repository/Trello/Board Deletion', [('urlBoard') : GlobalVariable.url_Board, ('idBoard') : idBoardVar ]))
+response5 = WS.sendRequest(findTestObject('Trello/Board/Board Deletion', [('urlBoard') : GlobalVariable.url_Board, ('idBoard') : idBoardVar ]))
 WS.verifyResponseStatusCode(response5, 200, FailureHandling.CONTINUE_ON_FAILURE)
 
 //  logout

@@ -22,7 +22,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${urlCard}/${idCard}/attachments?key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758&amp;url=${urlAttachment}</restUrl>
+   <restUrl>${urlCard}/${idCard}/attachments?key=${key}&amp;token=${token}&amp;url=${urlAttachment}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -51,6 +51,20 @@
       <id>b12f22e8-9bdc-41dc-bcec-903237cc5d52</id>
       <masked>false</masked>
       <name>urlAttachment</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.key</defaultValue>
+      <description></description>
+      <id>959ea63f-391e-409a-9205-a7e49597523b</id>
+      <masked>false</masked>
+      <name>key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.token</defaultValue>
+      <description></description>
+      <id>8f7c8c63-d75b-4749-8ed4-341d8090c94b</id>
+      <masked>false</masked>
+      <name>token</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

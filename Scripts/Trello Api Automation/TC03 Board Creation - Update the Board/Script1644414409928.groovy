@@ -20,20 +20,20 @@ import org.openqa.selenium.Keys as Keys
 //vars
 def boardNameVar = 'Update details of board'
 def updatedBoardNameVar = 'Board Name Updated'
-def boardDescription = 'I have updated the details of this board'
+def m = 'I have updated the details of this board'
 def permissionLevelVar = 'public'
 def backgroundColorVar = 'red'
 
 
 //  Board Creation
-response = WS.sendRequest(findTestObject('Trello/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar]))
+response = WS.sendRequest(findTestObject('Trello/Board/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar]))
 WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)
 def idBoardVar = WS.getElementPropertyValue(response, "id", FailureHandling.CONTINUE_ON_FAILURE)
 WS.containsString(response, boardNameVar, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 // Update Board Creation
-response1 = WS.sendRequest(findTestObject('Object Repository/Trello/Update Board',[('urlBoard') : GlobalVariable.url_Board,('updatedBoardName') : updatedBoardNameVar,
+response1 = WS.sendRequest(findTestObject('Trello/Board/Update Board',[('urlBoard') : GlobalVariable.url_Board,('updatedBoardName') : updatedBoardNameVar,
 	('idBoard') : idBoardVar,('description') : boardDescription,('permission') : permissionLevelVar,('backgroundColor') : backgroundColorVar ]))
 WS.verifyResponseStatusCode(response1, 200, FailureHandling.CONTINUE_ON_FAILURE)
 boardResponse = response1.getResponseText()

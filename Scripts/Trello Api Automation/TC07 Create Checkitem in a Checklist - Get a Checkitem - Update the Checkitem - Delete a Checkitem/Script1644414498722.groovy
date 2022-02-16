@@ -29,7 +29,7 @@ def updatedNameVar = 'Todo Task -1'
 def updatedStateVar = 'complete'
 
 //  Board Creation
-response1 = WS.sendRequest(findTestObject('Trello/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar]))
+response1 = WS.sendRequest(findTestObject('Trello/Board/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar]))
 WS.verifyResponseStatusCode(response1, 200, FailureHandling.CONTINUE_ON_FAILURE)
 def idBoardVar = WS.getElementPropertyValue(response1, "id", FailureHandling.CONTINUE_ON_FAILURE)
 WS.containsString(response1, boardNameVar, false, FailureHandling.CONTINUE_ON_FAILURE)

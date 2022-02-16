@@ -15,7 +15,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${urlCard}/${idCard}/${idAttachment}?key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758&amp;name=${updatedCardName}&amp;desc=${description}&amp;url=&quot;https://www.youtube.com/&quot;</restUrl>
+   <restUrl>${urlCard}/${idCard}/${idAttachment}?key=${key}&amp;token=${token}&amp;name=${updatedCardName}&amp;desc=${description}&amp;url=https://www.youtube.com/</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -58,6 +58,20 @@
       <id>298f7dca-3dbb-4d4b-9253-628020b9afba</id>
       <masked>false</masked>
       <name>idAttachment</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.key</defaultValue>
+      <description></description>
+      <id>eb0bb91d-e493-4d4d-8751-7d075a76d602</id>
+      <masked>false</masked>
+      <name>key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.token</defaultValue>
+      <description></description>
+      <id>43f5a3c6-1e29-4ffc-bc24-91ef5914b7eb</id>
+      <masked>false</masked>
+      <name>token</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

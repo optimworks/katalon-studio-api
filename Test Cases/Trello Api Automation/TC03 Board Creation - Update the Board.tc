@@ -5,4 +5,25 @@
    <tag>Trello/api</tag>
    <comment></comment>
    <testCaseGuid>5d26ff8a-c31f-4fec-9e00-c24d32c381ed</testCaseGuid>
+   <variable>
+      <defaultValue>'Update details of board'</defaultValue>
+      <description></description>
+      <id>62c95e12-4c47-45eb-8259-9c6dc42d9291</id>
+      <masked>false</masked>
+      <name>boardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'Board Name Updated'</defaultValue>
+      <description></description>
+      <id>b1a758e6-ed02-43df-a994-34a3746c9084</id>
+      <masked>false</masked>
+      <name>updatedBoardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d0b94fe7-806a-451a-92f2-1eaea0abb101</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
 </TestCaseEntity>

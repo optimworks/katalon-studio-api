@@ -15,7 +15,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${urlList}/${ListId}?name=${updateName}&amp;key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758&amp;subscribed=true</restUrl>
+   <restUrl>${urlList}/${ListId}?name=${updateName}&amp;key=${key}&amp;token=${token}&amp;subscribed=true</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -44,6 +44,20 @@
       <id>3ce4d574-f979-4365-b35a-463a9d322d49</id>
       <masked>false</masked>
       <name>ListId</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.key</defaultValue>
+      <description></description>
+      <id>eefb1aed-c0c4-41e4-93a1-9ecf20aff66a</id>
+      <masked>false</masked>
+      <name>key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.token</defaultValue>
+      <description></description>
+      <id>cf84e724-b73e-47ab-9cd6-91bcacfc8522</id>
+      <masked>false</masked>
+      <name>token</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

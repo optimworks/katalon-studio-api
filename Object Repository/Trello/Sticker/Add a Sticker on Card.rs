@@ -15,7 +15,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${urlCard}/${idCard}/stickers?image=${imageName}&amp;top=${top}&amp;left=${left}&amp;zIndex=${zIndex}&amp;key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758</restUrl>
+   <restUrl>${urlCard}/${idCard}/stickers?image=${imageName}&amp;top=${top}&amp;left=${left}&amp;zIndex=${zIndex}&amp;key=${key}&amp;token=${token}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -65,6 +65,20 @@
       <id>76a01c16-8d9c-4401-9ac8-d1afee97aac1</id>
       <masked>false</masked>
       <name>zIndex</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.key</defaultValue>
+      <description></description>
+      <id>98f512e9-0c1d-4d9a-b9ac-4341e13b6cc3</id>
+      <masked>false</masked>
+      <name>key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.token</defaultValue>
+      <description></description>
+      <id>ded21c7b-1bd3-401c-8cdd-3f0af02c4e22</id>
+      <masked>false</masked>
+      <name>token</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

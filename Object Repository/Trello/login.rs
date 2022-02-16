@@ -6,11 +6,11 @@
    <elementGuidId>cd84ab56-d44f-49c9-afa0-5a1a3a302433</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <connectionTimeout>0</connectionTimeout>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\&quot;email\&quot;:\&quot;${email}\&quot;,\&quot;password\&quot;:\&quot;${password}\&quot;}&quot;,
+  &quot;text&quot;: &quot;{\&quot;email\&quot;:\&quot;nikhil.tadi@gmail.com\&quot;,\&quot;password\&quot;:\&quot;bunny007\&quot;}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -23,39 +23,18 @@
       <value>application/json</value>
    </httpHeaderProperties>
    <katalonVersion>8.2.0</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${url}/login</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>https://api.trello.com</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
-   <variables>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>077282b9-d5d4-4445-b71d-c18caeb1f183</id>
-      <masked>false</masked>
-      <name>email</name>
-   </variables>
-   <variables>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>f09ea00a-28bf-404d-b125-a6491b547795</id>
-      <masked>false</masked>
-      <name>password</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.trello_url</defaultValue>
-      <description></description>
-      <id>2ec76eb0-f143-42de-80d8-89c969b9c775</id>
-      <masked>false</masked>
-      <name>url</name>
-   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

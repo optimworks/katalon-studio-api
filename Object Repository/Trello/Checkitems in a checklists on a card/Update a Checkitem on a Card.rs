@@ -15,7 +15,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${urlCard}/${idCard}/checkItem/${idCheckitem}?key=87a4904ed7d712ca1bc346ae43515631&amp;token=22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758&amp;name=${updatedName}&amp;state=${updatedState}</restUrl>
+   <restUrl>${urlCard}/${idCard}/checkItem/${idCheckitem}?key=${key}&amp;token=${token}&amp;name=${updatedName}&amp;state=${updatedState}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -58,6 +58,20 @@
       <id>3f88d18e-792c-433e-8d96-c9f1ba8618c4</id>
       <masked>false</masked>
       <name>updatedState</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.key</defaultValue>
+      <description></description>
+      <id>aea7658b-23aa-4c9e-8be6-d8065395d8e2</id>
+      <masked>false</masked>
+      <name>key</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.token</defaultValue>
+      <description></description>
+      <id>db558577-eefc-4453-9c10-714880f3746a</id>
+      <masked>false</masked>
+      <name>token</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

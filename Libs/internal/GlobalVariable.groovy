@@ -59,6 +59,16 @@ public class GlobalVariable {
      */
     public static Object url_Board
      
+    /**
+     * <p></p>
+     */
+    public static Object key
+     
+    /**
+     * <p></p>
+     */
+    public static Object token
+     
 
     static {
         try {
@@ -76,6 +86,8 @@ public class GlobalVariable {
             url_Card = selectedVariables['url_Card']
             url_List = selectedVariables['url_List']
             url_Board = selectedVariables['url_Board']
+            key = selectedVariables['key']
+            token = selectedVariables['token']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

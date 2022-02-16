@@ -1,0 +1,188 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Trello,,,,2022-02-15 17:52:43,2022-02-15 17:53:15,31.741s,FAILED
+,,,,,,,
+Test Cases/Trello Api Automation/TC01 Login - Board Creation - Logout,,,,2022-02-15 17:52:43,2022-02-15 17:52:47,3.729s,FAILED
+"emailVar = ""nikhil.tadi@gmail.com""",,,,2022-02-15 17:52:44,2022-02-15 17:52:44,0.000s,PASSED
+"passwordVar = ""bunny007""",,,,2022-02-15 17:52:44,2022-02-15 17:52:44,0.000s,PASSED
+"boardNameVar = ""API_Automation""",,,,2022-02-15 17:52:44,2022-02-15 17:52:44,0.000s,PASSED
+"response1 = sendRequest(findTestObject(""Trello/Board Creation"", [""urlBoard"":url_Board, ""boardName"":boardNameVar]))",,,,2022-02-15 17:52:44,2022-02-15 17:52:46,2.481s,PASSED
+"verifyResponseStatusCode(response1, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:46,2022-02-15 17:52:46,0.004s,PASSED
+"idBoardVar = getElementPropertyValue(response1, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:46,2022-02-15 17:52:46,0.063s,PASSED
+board_response = response1.getResponseText(),,,,2022-02-15 17:52:46,2022-02-15 17:52:46,0.015s,PASSED
+"println(""
+	"" + board_response + ""
+	"")",,,,2022-02-15 17:52:46,2022-02-15 17:52:46,0.000s,PASSED
+"containsString(response1, boardNameVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:46,2022-02-15 17:52:46,0.018s,PASSED
+"response2 = sendRequest(findTestObject(""Trello/Board Creation"", [""urlBoard"":url_Board]))",,,,2022-02-15 17:52:46,2022-02-15 17:52:47,0.774s,PASSED
+"verifyResponseStatusCode(response2, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:47,2022-02-15 17:52:47,0.015s,FAILED
+,,,,,,,
+Test Cases/Trello Api Automation/TC02 Login - Board Creation - List Creation - Card Creation - logout,,login into trello and then logout,"trello,login->logout",2022-02-15 17:52:47,2022-02-15 17:52:54,6.419s,FAILED
+"emailVar = ""nikhil.tadi@gmail.com""",,,,2022-02-15 17:52:47,2022-02-15 17:52:47,0.003s,PASSED
+"passwordVar = ""bunny007""",,,,2022-02-15 17:52:47,2022-02-15 17:52:47,0.001s,PASSED
+"boardNameVar = ""Trello Api 1""",,,,2022-02-15 17:52:47,2022-02-15 17:52:47,0.001s,PASSED
+"nameofListVar = ""List1""",,,,2022-02-15 17:52:47,2022-02-15 17:52:47,0.000s,PASSED
+"cardNameVar = ""My card""",,,,2022-02-15 17:52:47,2022-02-15 17:52:47,0.000s,PASSED
+"response = sendRequest(findTestObject(""Trello/login"", [""url"":trello_url, ""email"":emailVar, ""password"":passwordVar]))",,,,2022-02-15 17:52:47,2022-02-15 17:52:49,1.295s,PASSED
+"verifyResponseStatusCode(response, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:49,2022-02-15 17:52:49,0.007s,FAILED
+"response1 = sendRequest(findTestObject(""Trello/Board Creation"", [""urlBoard"":url_Board, ""boardName"":boardNameVar]))",,,,2022-02-15 17:52:49,2022-02-15 17:52:50,0.861s,PASSED
+"verifyResponseStatusCode(response1, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:50,2022-02-15 17:52:50,0.016s,PASSED
+"idBoardVar = getElementPropertyValue(response1, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:50,2022-02-15 17:52:50,0.015s,PASSED
+board_response = response1.getResponseText(),,,,2022-02-15 17:52:50,2022-02-15 17:52:50,0.000s,PASSED
+"println(""
+	"" + board_response + ""
+	"")",,,,2022-02-15 17:52:50,2022-02-15 17:52:50,0.000s,PASSED
+"response2 = sendRequest(findTestObject(""Trello/List/Create a new list"", [""urlList"":url_List, ""nameofList"":nameofListVar, ""idBoard"":idBoardVar]))",,,,2022-02-15 17:52:50,2022-02-15 17:52:50,0.757s,PASSED
+"verifyResponseStatusCode(response2, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:50,2022-02-15 17:52:50,0.000s,PASSED
+"listIdVar = getElementPropertyValue(response2, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:50,2022-02-15 17:52:50,0.015s,PASSED
+"response3 = sendRequest(findTestObject(""Trello/Create card"", [""urlCard"":url_Card, ""listId"":listIdVar, ""cardName"":cardNameVar]))",,,,2022-02-15 17:52:50,2022-02-15 17:52:51,0.877s,PASSED
+"verifyResponseStatusCode(response3, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:51,2022-02-15 17:52:51,0.002s,PASSED
+card_response = response3.getResponseText(),,,,2022-02-15 17:52:51,2022-02-15 17:52:51,0.000s,PASSED
+"println(""
+	"" + card_response + ""
+	"")",,,,2022-02-15 17:52:51,2022-02-15 17:52:51,0.000s,PASSED
+"response5 = sendRequest(findTestObject(""Object Repository/Trello/Board Deletion"", [""urlBoard"":url_Board, ""idBoard"":idBoardVar]))",,,,2022-02-15 17:52:51,2022-02-15 17:52:52,1.039s,PASSED
+"verifyResponseStatusCode(response5, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:52,2022-02-15 17:52:52,0.000s,PASSED
+"response6 = sendRequest(findTestObject(""Trello/logout""))",,,,2022-02-15 17:52:52,2022-02-15 17:52:54,1.206s,PASSED
+"verifyResponseStatusCode(response6, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:54,2022-02-15 17:52:54,0.000s,PASSED
+,,,,,,,
+Test Cases/Trello Api Automation/TC03 Board Creation - Update the Board,,,Trello/api,2022-02-15 17:52:54,2022-02-15 17:52:56,2.028s,PASSED
+"boardNameVar = ""Update details of board""",,,,2022-02-15 17:52:54,2022-02-15 17:52:54,0.000s,PASSED
+"updatedBoardNameVar = ""Board Name Updated""",,,,2022-02-15 17:52:54,2022-02-15 17:52:54,0.000s,PASSED
+"boardDescription = ""I have updated the details of this board""",,,,2022-02-15 17:52:54,2022-02-15 17:52:54,0.000s,PASSED
+"permissionLevelVar = ""public""",,,,2022-02-15 17:52:54,2022-02-15 17:52:54,0.000s,PASSED
+"backgroundColorVar = ""red""",,,,2022-02-15 17:52:54,2022-02-15 17:52:54,0.000s,PASSED
+"response = sendRequest(findTestObject(""Trello/Board Creation"", [""urlBoard"":url_Board, ""boardName"":boardNameVar]))",,,,2022-02-15 17:52:54,2022-02-15 17:52:55,0.824s,PASSED
+"verifyResponseStatusCode(response, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:55,2022-02-15 17:52:55,0.001s,PASSED
+"idBoardVar = getElementPropertyValue(response, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:55,2022-02-15 17:52:55,0.020s,PASSED
+"containsString(response, boardNameVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:55,2022-02-15 17:52:55,0.002s,PASSED
+"response1 = sendRequest(findTestObject(""Object Repository/Trello/Update Board"", [""urlBoard"":url_Board, ""updatedBoardName"":updatedBoardNameVar, ""idBoard"":idBoardVar, ""description"":boardDescription, ""permission"":permissionLevelVar, ... ]))",,,,2022-02-15 17:52:55,2022-02-15 17:52:56,0.921s,PASSED
+"verifyResponseStatusCode(response1, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:56,2022-02-15 17:52:56,0.015s,PASSED
+boardResponse = response1.getResponseText(),,,,2022-02-15 17:52:56,2022-02-15 17:52:56,0.000s,PASSED
+"println(""
+	"" + boardResponse + ""
+	"")",,,,2022-02-15 17:52:56,2022-02-15 17:52:56,0.000s,PASSED
+"containsString(response1, boardDescription, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:56,2022-02-15 17:52:56,0.002s,PASSED
+,,,,,,,
+Test Cases/Trello Api Automation/TC04 Board - List - Card - Update Card Details,,,,2022-02-15 17:52:56,2022-02-15 17:52:59,3.383s,FAILED
+"boardNameVar = ""Updated Card Details""",,,,2022-02-15 17:52:56,2022-02-15 17:52:56,0.012s,PASSED
+"nameofListVar = ""My List""",,,,2022-02-15 17:52:56,2022-02-15 17:52:56,0.000s,PASSED
+"cardNameVar = ""My card""",,,,2022-02-15 17:52:56,2022-02-15 17:52:56,0.001s,PASSED
+"updatedCardNameVar = ""Update card name""",,,,2022-02-15 17:52:56,2022-02-15 17:52:56,0.000s,PASSED
+"addDesciptionToCard = "" Details of this card has been updated """,,,,2022-02-15 17:52:56,2022-02-15 17:52:56,0.001s,PASSED
+"response1 = sendRequest(findTestObject(""Trello/Board Creation"", [""urlBoard"":url_Board, ""boardName"":boardNameVar]))",,,,2022-02-15 17:52:56,2022-02-15 17:52:57,0.812s,PASSED
+"verifyResponseStatusCode(response1, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:57,2022-02-15 17:52:57,0.000s,PASSED
+"idBoardVar = getElementPropertyValue(response1, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:57,2022-02-15 17:52:57,0.028s,PASSED
+board_response = response1.getResponseText(),,,,2022-02-15 17:52:57,2022-02-15 17:52:57,0.000s,PASSED
+"println(""
+	"" + board_response + ""
+	"")",,,,2022-02-15 17:52:57,2022-02-15 17:52:57,0.001s,PASSED
+"containsString(response1, boardNameVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:57,2022-02-15 17:52:57,0.003s,PASSED
+"response2 = sendRequest(findTestObject(""Trello/List/Create a new list"", [""urlList"":url_List, ""nameofList"":nameofListVar, ""idBoard"":idBoardVar]))",,,,2022-02-15 17:52:57,2022-02-15 17:52:57,0.755s,PASSED
+"verifyResponseStatusCode(response2, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:57,2022-02-15 17:52:57,0.001s,PASSED
+"containsString(response2, nameofListVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:57,2022-02-15 17:52:57,0.000s,PASSED
+"listIdVar = getElementPropertyValue(response2, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:57,2022-02-15 17:52:57,0.016s,PASSED
+"response3 = sendRequest(findTestObject(""Trello/Create card"", [""urlCard"":url_Card, ""listId"":listIdVar, ""cardName"":cardNameVar]))",,,,2022-02-15 17:52:57,2022-02-15 17:52:58,0.790s,PASSED
+"verifyResponseStatusCode(response3, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:58,2022-02-15 17:52:58,0.000s,PASSED
+"idCardVar = getElementPropertyValue(response3, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:58,2022-02-15 17:52:58,0.015s,PASSED
+card_response = response3.getResponseText(),,,,2022-02-15 17:52:58,2022-02-15 17:52:58,0.000s,PASSED
+"println(""
+	"" + card_response + ""
+	"")",,,,2022-02-15 17:52:58,2022-02-15 17:52:58,0.000s,PASSED
+"containsString(response3, cardNameVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:58,2022-02-15 17:52:58,0.000s,PASSED
+"response4 = sendRequest(findTestObject(""Object Repository/Trello/Update card"", [""urlCard"":url_Card, ""idCard"":idCardVar, ""updatedCardName"":updatedCardNameVar, ""description"":addDesciptionToCard]))",,,,2022-02-15 17:52:58,2022-02-15 17:52:59,0.727s,PASSED
+"verifyResponseStatusCode(response4, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:59,2022-02-15 17:52:59,0.002s,FAILED
+"containsString(response4, updatedCardNameVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:52:59,2022-02-15 17:52:59,0.002s,FAILED
+,,,,,,,
+Test Cases/Trello Api Automation/TC05 Create a List - Get the data from List - Update the List - Archive the List,,,,2022-02-15 17:52:59,2022-02-15 17:53:03,4.119s,PASSED
+"boardNameVar = ""Update the List""",,,,2022-02-15 17:52:59,2022-02-15 17:52:59,0.000s,PASSED
+"nameofListVar = ""List""",,,,2022-02-15 17:52:59,2022-02-15 17:52:59,0.000s,PASSED
+"updateNameVar = ""List name updated""",,,,2022-02-15 17:52:59,2022-02-15 17:52:59,0.000s,PASSED
+"createListRespMsg = """"name"":""List1""""",,,,2022-02-15 17:52:59,2022-02-15 17:52:59,0.000s,PASSED
+"archiveListRespMsg = """"closed"":true""",,,,2022-02-15 17:52:59,2022-02-15 17:52:59,0.000s,PASSED
+"response = sendRequest(findTestObject(""Trello/Board Creation"", [""urlBoard"":url_Board, ""boardName"":boardNameVar]))",,,,2022-02-15 17:52:59,2022-02-15 17:53:00,0.782s,PASSED
+"verifyResponseStatusCode(response, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:00,2022-02-15 17:53:00,0.002s,PASSED
+"idBoardVar = getElementPropertyValue(response, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:00,2022-02-15 17:53:00,0.000s,PASSED
+"containsString(response, boardNameVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:00,2022-02-15 17:53:00,0.000s,PASSED
+"response1 = sendRequest(findTestObject(""Trello/List/Create a new list"", [""urlList"":url_List, ""nameofList"":nameofListVar, ""idBoard"":idBoardVar]))",,,,2022-02-15 17:53:00,2022-02-15 17:53:01,0.847s,PASSED
+"verifyResponseStatusCode(response1, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:01,2022-02-15 17:53:01,0.000s,PASSED
+"containsString(response1, nameofListVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:01,2022-02-15 17:53:01,0.000s,PASSED
+"listIdVar = getElementPropertyValue(response1, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:01,2022-02-15 17:53:01,0.015s,PASSED
+"response2 = sendRequest(findTestObject(""Trello/List/Get data from list"", [""urlList"":url_List, ""ListId"":listIdVar]))",,,,2022-02-15 17:53:01,2022-02-15 17:53:02,0.730s,PASSED
+"verifyResponseStatusCode(response2, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:02,2022-02-15 17:53:02,0.000s,PASSED
+getData = response2.getResponseText(),,,,2022-02-15 17:53:02,2022-02-15 17:53:02,0.000s,PASSED
+"print(""
+	"" + getData + ""
+	"")",,,,2022-02-15 17:53:02,2022-02-15 17:53:02,0.005s,PASSED
+"getListDataRespMsg = getElementPropertyValue(response2, ""name"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:02,2022-02-15 17:53:02,0.005s,PASSED
+"containsString(response2, getListDataRespMsg, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:02,2022-02-15 17:53:02,0.011s,PASSED
+"response3 = sendRequest(findTestObject(""Trello/List/Update List"", [""updateName"":updateNameVar, ""urlList"":url_List, ""ListId"":listIdVar]))",,,,2022-02-15 17:53:02,2022-02-15 17:53:02,0.748s,PASSED
+"verifyResponseStatusCode(response3, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:02,2022-02-15 17:53:02,0.000s,PASSED
+"containsString(response3, updateNameVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:02,2022-02-15 17:53:02,0.000s,PASSED
+"response4 = sendRequest(findTestObject(""Trello/List/Archive a list"", [""urlList"":url_List, ""ListId"":listIdVar]))",,,,2022-02-15 17:53:02,2022-02-15 17:53:03,0.751s,PASSED
+"verifyResponseStatusCode(response4, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:03,2022-02-15 17:53:03,0.002s,PASSED
+,,,,,,,
+Test Cases/Trello Api Automation/TC06 Create a Checklist on a Card - Get Checklist on a Card - Delete a Checklist on a Card,,TC06 Create a Checklist - Get checklist item - update a checkitem,Trello/Checklist,2022-02-15 17:53:03,2022-02-15 17:53:08,5.348s,PASSED
+"boardNameVar = ""Create a Card Checklist""",,,,2022-02-15 17:53:03,2022-02-15 17:53:03,0.000s,PASSED
+"nameofListVar = ""List""",,,,2022-02-15 17:53:03,2022-02-15 17:53:03,0.000s,PASSED
+"cardNameVar = ""My Card""",,,,2022-02-15 17:53:03,2022-02-15 17:53:03,0.000s,PASSED
+"getChecklistItemRespMsg = ""complete""",,,,2022-02-15 17:53:03,2022-02-15 17:53:03,0.000s,PASSED
+"checklistNameVar = ""Todo""",,,,2022-02-15 17:53:03,2022-02-15 17:53:03,0.000s,PASSED
+"response1 = sendRequest(findTestObject(""Trello/Board Creation"", [""urlBoard"":url_Board, ""boardName"":boardNameVar]))",,,,2022-02-15 17:53:03,2022-02-15 17:53:04,0.813s,PASSED
+"verifyResponseStatusCode(response1, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:04,2022-02-15 17:53:04,0.000s,PASSED
+"idBoardVar = getElementPropertyValue(response1, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:04,2022-02-15 17:53:04,0.021s,PASSED
+"containsString(response1, boardNameVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:04,2022-02-15 17:53:04,0.001s,PASSED
+"response2 = sendRequest(findTestObject(""Trello/List/Create a new list"", [""urlList"":url_List, ""nameofList"":nameofListVar, ""idBoard"":idBoardVar]))",,,,2022-02-15 17:53:04,2022-02-15 17:53:05,0.750s,PASSED
+"verifyResponseStatusCode(response2, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:05,2022-02-15 17:53:05,0.015s,PASSED
+"listIdVar = getElementPropertyValue(response2, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:05,2022-02-15 17:53:05,0.000s,PASSED
+"containsString(response2, nameofListVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:05,2022-02-15 17:53:05,0.000s,PASSED
+"response3 = sendRequest(findTestObject(""Trello/Create card"", [""urlCard"":url_Card, ""listId"":listIdVar, ""cardName"":cardNameVar]))",,,,2022-02-15 17:53:05,2022-02-15 17:53:06,0.786s,PASSED
+"verifyResponseStatusCode(response3, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:06,2022-02-15 17:53:06,0.001s,PASSED
+"idCardVar = getElementPropertyValue(response3, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:06,2022-02-15 17:53:06,0.000s,PASSED
+"containsString(response3, cardNameVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:06,2022-02-15 17:53:06,0.000s,PASSED
+"response4 = sendRequest(findTestObject(""Trello/Checklist on Card/Create Checklist on card"", [""urlCard"":url_Card, ""idCard"":idCardVar, ""checklistName"":checklistNameVar]))",,,,2022-02-15 17:53:06,2022-02-15 17:53:06,0.745s,PASSED
+"verifyResponseStatusCode(response4, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:06,2022-02-15 17:53:06,0.000s,PASSED
+"idChecklistVar = getElementPropertyValue(response4, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:06,2022-02-15 17:53:06,0.014s,PASSED
+"response5 = sendRequest(findTestObject(""Trello/Checklist on Card/Get Checklist Item"", [""urlCard"":url_Card, ""idCard"":idCardVar]))",,,,2022-02-15 17:53:06,2022-02-15 17:53:07,1.008s,PASSED
+"verifyResponseStatusCode(response5, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:07,2022-02-15 17:53:07,0.000s,PASSED
+"containsString(response5, checklistNameVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:07,2022-02-15 17:53:07,0.000s,PASSED
+"response6 = sendRequest(findTestObject(""Trello/Checklist on Card/Delete a Checklist on a Card"", [""urlCard"":url_Card, ""idCard"":idCardVar, ""idChecklist"":idChecklistVar]))",,,,2022-02-15 17:53:07,2022-02-15 17:53:08,0.975s,PASSED
+"verifyResponseStatusCode(response6, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:08,2022-02-15 17:53:08,0.000s,PASSED
+,,,,,,,
+Test Cases/Trello Api Automation/TC07 Create Checkitem in a Checklist - Get a Checkitem - Update the Checkitem - Delete a Checkitem,,,,2022-02-15 17:53:08,2022-02-15 17:53:15,6.373s,PASSED
+"boardNameVar = ""Create a Card Checkitem""",,,,2022-02-15 17:53:09,2022-02-15 17:53:09,0.000s,PASSED
+"nameofListVar = ""List""",,,,2022-02-15 17:53:09,2022-02-15 17:53:09,0.000s,PASSED
+"cardNameVar = ""My Card""",,,,2022-02-15 17:53:09,2022-02-15 17:53:09,0.000s,PASSED
+"getChecklistItemRespMsg = ""complete""",,,,2022-02-15 17:53:09,2022-02-15 17:53:09,0.000s,PASSED
+"checklistNameVar = ""Todo""",,,,2022-02-15 17:53:09,2022-02-15 17:53:09,0.002s,PASSED
+"nameCheckitemVar = ""Task-1""",,,,2022-02-15 17:53:09,2022-02-15 17:53:09,0.000s,PASSED
+"updatedNameVar = ""Todo Task -1""",,,,2022-02-15 17:53:09,2022-02-15 17:53:09,0.000s,PASSED
+"updatedStateVar = ""complete""",,,,2022-02-15 17:53:09,2022-02-15 17:53:09,0.000s,PASSED
+"response1 = sendRequest(findTestObject(""Trello/Board Creation"", [""urlBoard"":url_Board, ""boardName"":boardNameVar]))",,,,2022-02-15 17:53:09,2022-02-15 17:53:10,0.968s,PASSED
+"verifyResponseStatusCode(response1, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:10,2022-02-15 17:53:10,0.000s,PASSED
+"idBoardVar = getElementPropertyValue(response1, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:10,2022-02-15 17:53:10,0.016s,PASSED
+"containsString(response1, boardNameVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:10,2022-02-15 17:53:10,0.000s,PASSED
+"response2 = sendRequest(findTestObject(""Trello/List/Create a new list"", [""urlList"":url_List, ""nameofList"":nameofListVar, ""idBoard"":idBoardVar]))",,,,2022-02-15 17:53:10,2022-02-15 17:53:10,0.808s,PASSED
+"verifyResponseStatusCode(response2, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:10,2022-02-15 17:53:10,0.001s,PASSED
+"listIdVar = getElementPropertyValue(response2, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:10,2022-02-15 17:53:10,0.000s,PASSED
+"containsString(response2, nameofListVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:10,2022-02-15 17:53:10,0.016s,PASSED
+"response3 = sendRequest(findTestObject(""Trello/Create card"", [""urlCard"":url_Card, ""listId"":listIdVar, ""cardName"":cardNameVar]))",,,,2022-02-15 17:53:10,2022-02-15 17:53:11,0.734s,PASSED
+"verifyResponseStatusCode(response3, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:11,2022-02-15 17:53:11,0.000s,PASSED
+"idCardVar = getElementPropertyValue(response3, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:11,2022-02-15 17:53:11,0.016s,PASSED
+"containsString(response3, cardNameVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:11,2022-02-15 17:53:11,0.000s,PASSED
+"response4 = sendRequest(findTestObject(""Trello/Checklist on Card/Create Checklist on card"", [""urlCard"":url_Card, ""idCard"":idCardVar, ""checklistName"":checklistNameVar]))",,,,2022-02-15 17:53:11,2022-02-15 17:53:12,0.887s,PASSED
+"verifyResponseStatusCode(response4, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:12,2022-02-15 17:53:12,0.000s,PASSED
+"idChecklistVar = getElementPropertyValue(response4, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:12,2022-02-15 17:53:12,0.015s,PASSED
+data = response4.getResponseText(),,,,2022-02-15 17:53:12,2022-02-15 17:53:12,0.000s,PASSED
+"print(""
+	"" + data + ""
+	"")",,,,2022-02-15 17:53:12,2022-02-15 17:53:12,0.000s,PASSED
+"containsString(response4, checklistNameVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:12,2022-02-15 17:53:12,0.000s,PASSED
+"response5 = sendRequest(findTestObject(""Trello/Checkitems in a checklists on a card/Create Checkitem on Checklist"", [""idChecklist"":idChecklistVar, ""nameCheckitem"":nameCheckitemVar]))",,,,2022-02-15 17:53:12,2022-02-15 17:53:13,0.847s,PASSED
+"verifyResponseStatusCode(response5, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:13,2022-02-15 17:53:13,0.000s,PASSED
+"idCheckitemVar = getElementPropertyValue(response5, ""id"", CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:13,2022-02-15 17:53:13,0.019s,PASSED
+"containsString(response5, nameCheckitemVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:13,2022-02-15 17:53:13,0.001s,PASSED
+"response6 = sendRequest(findTestObject(""Trello/Checkitems in a checklists on a card/Update a Checkitem on a Card"", [""urlCard"":url_Card, ""idCard"":idCardVar, ""idCheckitem"":idCheckitemVar, ""updatedName"":updatedNameVar, ""updatedState"":updatedStateVar]))",,,,2022-02-15 17:53:13,2022-02-15 17:53:14,0.971s,PASSED
+"verifyResponseStatusCode(response6, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:14,2022-02-15 17:53:14,0.001s,PASSED
+"containsString(response6, updatedNameVar, false, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:14,2022-02-15 17:53:14,0.000s,PASSED
+"response7 = sendRequest(findTestObject(""Trello/Checkitems in a checklists on a card/Delete a Checkitem"", [""urlCard"":url_Card, ""idCard"":idCardVar, ""idCheckitem"":idCheckitemVar]))",,,,2022-02-15 17:53:14,2022-02-15 17:53:15,0.821s,PASSED
+"verifyResponseStatusCode(response7, 200, CONTINUE_ON_FAILURE)",,,,2022-02-15 17:53:15,2022-02-15 17:53:15,0.000s,PASSED
