@@ -17,12 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//vars
-def boardNameVar = 'Updated Card Details'
-def nameofListVar = 'My List'
-def cardNameVar = 'My card'
-def updatedCardNameVar = 'Update card name'
-def addDesciptionToCard = ' Details of this card has been updated '
 
 //  Board Creation
 response1 = WS.sendRequest(findTestObject('Trello/Board/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar]))

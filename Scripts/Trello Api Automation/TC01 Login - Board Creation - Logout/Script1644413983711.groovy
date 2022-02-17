@@ -17,43 +17,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//  login
-//response = WS.sendRequest(findTestObject('Trello/login', [('url') : GlobalVariable.trello_url, ('email') : emailVar, ('password') : passwordVar]))
-//WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)// is there any way to print the costum error message
-//login_response = response.getResponseText()
-//println(login_response)
-
 //  board creation
 response1 = WS.sendRequest(findTestObject('Trello/Board/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar]))
-WS.verifyResponseStatusCode(response1, 200, FailureHandling.CONTINUE_ON_FAILURE)
-def idBoardVar = WS.getElementPropertyValue(response1, "id", FailureHandling.CONTINUE_ON_FAILURE)
-board_response = response1.getResponseText()
-println("\n\t"+board_response+"\n\t")
-WS.containsString(response1,boardNameVar, false, FailureHandling.CONTINUE_ON_FAILURE)
+CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response1)
+idBoardVar = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response1, 'id')
+board_response = CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(response1)
 
 //Get Board
 response2 = WS.sendRequest(findTestObject('Trello/Board/Get Board', [('urlBoard') : GlobalVariable.url_Board, ('idBoard') : idBoardVar, ('key') : GlobalVariable.key
 	, ('token') : GlobalVariable.token]))
-WS.getResponseStatusCode(response2, FailureHandling.CONTINUE_ON_FAILURE)
-board_response = response2.getResponseText()
-println("\n\t"+board_response+"\n\t")
-boardName = WS.getElementPropertyValue(response2, 'name', FailureHandling.CONTINUE_ON_FAILURE)
-idBoard = WS.getElementPropertyValue(response2, 'id', FailureHandling.CONTINUE_ON_FAILURE)
-WS.verifyMatch(boardName, 'API_Automation', false)
-//WS.verifyEqual(idBoard, '620c9e6dba1fb343abf87921', FailureHandling.CONTINUE_ON_FAILURE)
+CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response2)
+CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(response2)
+
+boardName = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response2, 'name')
+idBoard = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response2, 'id')
+ 
+CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(boardName,'API_Automation')
 WS.containsString(response2,idBoard, false, FailureHandling.CONTINUE_ON_FAILURE)
-WS.verifyMatch(GlobalVariable.key, '87a4904ed7d712ca1bc346ae43515', false, FailureHandling.CONTINUE_ON_FAILURE)
 
+CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(GlobalVariable.key,'87a4904ed7d712ca1bc346ae43515')
+CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(GlobalVariable.token,'22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758')
 
-////  logout
-//response4 = WS.sendRequest(findTestObject('Trello/logout'))
-//WS.verifyResponseStatusCode(response4, 200, FailureHandling.CONTINUE_ON_FAILURE)
-//logout_response = response4.getResponseText()
-//println(logout_response)
-//
-
-
-
-
+concatenatedSring = WS.concatenate(['Katalon ', boardName] as String[], FailureHandling.CONTINUE_ON_FAILURE)
+print('\n\t'+concatenatedSring+'\n\t')
 
 

@@ -100,23 +100,161 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Trello Api Automation/TC04 Board - List - Card - Update Card Details</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4e9ba5b9-676e-4c85-a89a-959fd8d1e2b7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5442f906-d0c8-4e35-8987-dd9bc9dc94f4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4e2bebe1-7c35-42bf-93ae-9eec515e5b42</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>632ab75d-d461-4f5e-a300-7475da30e5af</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>70ea146a-a448-4cee-9d81-040958089d06</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>b06b22aa-bbaf-4e5f-8386-41d8f8811a80</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Trello Api Automation/TC05 Create a List - Get the data from List - Update the List - Archive the List</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>21ae3758-08dd-4401-9d52-13f7ca1f3008</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3fbeae2e-cdee-4eee-8422-81ad4b9abc41</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>682e75b6-d96c-4fbc-8dc6-6edaacc4acb5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ee63cbda-99c1-4d8a-919b-941c8cca3ebb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9208c904-ba29-460c-aa77-2b2f84b88e74</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>12e0785b-24aa-45a3-a660-68778436dd70</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Trello Api Automation/TC06 Create a Checklist on a Card - Get Checklist on a Card - Delete a Checklist on a Card</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b1e76796-695c-4542-91b5-6eee9d76bf7c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>35fa55b4-51d5-4727-bb0a-ca871704569b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0d81139f-bb4d-4ad1-8fb0-76e9c1efab52</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0a64d46d-892e-4d7c-b545-0705a9ae209e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>227b4b47-0470-4a5b-a873-df2e03f36a7d</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>7344c480-ec33-4c2c-9eae-cddf753a34b3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Trello Api Automation/TC07 Create Checkitem in a Checklist - Get a Checkitem - Update the Checkitem - Delete a Checkitem</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>154215c0-2c9d-4ff1-a748-050e7e285fc3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>534783db-51e4-40d4-ba75-81ebc4652c21</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d121b659-453e-416e-b740-1136b22b8bec</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8d86bc25-9bc0-4838-9e7e-a0caa62ca6c6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c98f6855-8f90-4091-84b6-6368dc3b1add</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0c33241e-ba5e-4485-902e-aebe37356258</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a48b00f6-450e-44a1-bf01-4ad064763428</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>de93ac45-8d57-4496-af12-a4a0ddcf76f6</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

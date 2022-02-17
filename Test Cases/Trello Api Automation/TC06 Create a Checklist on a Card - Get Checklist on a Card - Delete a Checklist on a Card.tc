@@ -5,4 +5,39 @@
    <tag>Trello/Checklist</tag>
    <comment></comment>
    <testCaseGuid>edf7a4c9-b43b-4b85-82e8-5e7253999cb4</testCaseGuid>
+   <variable>
+      <defaultValue>'Create a Card Checklist'</defaultValue>
+      <description></description>
+      <id>b1e76796-695c-4542-91b5-6eee9d76bf7c</id>
+      <masked>false</masked>
+      <name>boardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'List'</defaultValue>
+      <description></description>
+      <id>35fa55b4-51d5-4727-bb0a-ca871704569b</id>
+      <masked>false</masked>
+      <name>nameofListVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'My Card'</defaultValue>
+      <description></description>
+      <id>0d81139f-bb4d-4ad1-8fb0-76e9c1efab52</id>
+      <masked>false</masked>
+      <name>cardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'complete'</defaultValue>
+      <description></description>
+      <id>0a64d46d-892e-4d7c-b545-0705a9ae209e</id>
+      <masked>false</masked>
+      <name>getChecklistItemRespMsg</name>
+   </variable>
+   <variable>
+      <defaultValue>'Todo'</defaultValue>
+      <description></description>
+      <id>227b4b47-0470-4a5b-a873-df2e03f36a7d</id>
+      <masked>false</masked>
+      <name>checklistNameVar</name>
+   </variable>
 </TestCaseEntity>

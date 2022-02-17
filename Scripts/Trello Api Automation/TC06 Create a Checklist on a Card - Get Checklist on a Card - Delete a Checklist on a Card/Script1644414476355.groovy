@@ -17,12 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//vars
-def boardNameVar = 'Create a Card Checklist'
-def nameofListVar = 'List'
-def cardNameVar = 'My Card'
-def getChecklistItemRespMsg = "complete"
-def checklistNameVar = "Todo"
 
 //  board creation
 response1 = WS.sendRequest(findTestObject('Trello/Board/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar]))

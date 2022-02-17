@@ -17,20 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//Sytax
-
-//createlist = https://api.trello.com/1/lists?name={name}&idBoard=5abbe4b7ddc1b351ef961414
-//get a list = https://api.trello.com/1/lists/{id}
-//update list = https://api.trello.com/1/lists/{id}
-//Archive or unarchive a list = https://api.trello.com/1/lists/{id}/closed
-
-
-//Vars
-def boardNameVar = "Update the List"
-def nameofListVar = "List"
-def updateNameVar = 'List name updated'
-def createListRespMsg = '"name":"List1"'
-def  archiveListRespMsg = '"closed":true'
 
 //  Board Creation
 response = WS.sendRequest(findTestObject('Trello/Board/Board Creation', [('urlBoard') : GlobalVariable.url_Board,('boardName') : boardNameVar ]))

@@ -5,4 +5,60 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>569fc1cc-699f-4805-9020-419fe1a91fff</testCaseGuid>
+   <variable>
+      <defaultValue>'Create a Card Checkitem'</defaultValue>
+      <description></description>
+      <id>154215c0-2c9d-4ff1-a748-050e7e285fc3</id>
+      <masked>false</masked>
+      <name>boardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'List'</defaultValue>
+      <description></description>
+      <id>534783db-51e4-40d4-ba75-81ebc4652c21</id>
+      <masked>false</masked>
+      <name>nameofListVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'My Card'</defaultValue>
+      <description></description>
+      <id>d121b659-453e-416e-b740-1136b22b8bec</id>
+      <masked>false</masked>
+      <name>cardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'complete'</defaultValue>
+      <description></description>
+      <id>8d86bc25-9bc0-4838-9e7e-a0caa62ca6c6</id>
+      <masked>false</masked>
+      <name>getChecklistItemRespMsg</name>
+   </variable>
+   <variable>
+      <defaultValue>'Todo'</defaultValue>
+      <description></description>
+      <id>c98f6855-8f90-4091-84b6-6368dc3b1add</id>
+      <masked>false</masked>
+      <name>checklistNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'Task-1'</defaultValue>
+      <description></description>
+      <id>0c33241e-ba5e-4485-902e-aebe37356258</id>
+      <masked>false</masked>
+      <name>nameCheckitemVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'Todo Task -1'</defaultValue>
+      <description></description>
+      <id>a48b00f6-450e-44a1-bf01-4ad064763428</id>
+      <masked>false</masked>
+      <name>updatedNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'complete'</defaultValue>
+      <description></description>
+      <id>de93ac45-8d57-4496-af12-a4a0ddcf76f6</id>
+      <masked>false</masked>
+      <name>updatedStateVar</name>
+   </variable>
 </TestCaseEntity>

@@ -37,3 +37,44 @@ def static "sample.Common.findUserById"(
          , 	gender
          , 	expectedStatus)
 }
+
+
+def static "trelloKeyword.ReusableMethods.getElementPropertyValue"(
+    	Object resp	
+     , 	Object value	) {
+    (new trelloKeyword.ReusableMethods()).getElementPropertyValue(
+        	resp
+         , 	value)
+}
+
+
+def static "trelloKeyword.ReusableMethods.printResponseText"(
+    	Object resp	) {
+    (new trelloKeyword.ReusableMethods()).printResponseText(
+        	resp)
+}
+
+
+def static "trelloKeyword.ReusableMethods.verifyStatusCode"(
+    	Object resp	) {
+    (new trelloKeyword.ReusableMethods()).verifyStatusCode(
+        	resp)
+}
+
+
+def static "trelloKeyword.ReusableMethods.verifyMatch"(
+    	Object resp	
+     , 	Object text	) {
+    (new trelloKeyword.ReusableMethods()).verifyMatch(
+        	resp
+         , 	text)
+}
+
+
+def static "trelloKeyword.ReusableMethods.verifyNotMatch"(
+    	Object resp	
+     , 	Object text	) {
+    (new trelloKeyword.ReusableMethods()).verifyNotMatch(
+        	resp
+         , 	text)
+}
