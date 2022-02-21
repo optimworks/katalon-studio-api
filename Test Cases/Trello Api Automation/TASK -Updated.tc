@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TASK -Updated</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c5eb8cb7-df45-490d-ab4c-ac6b7d12048e</testCaseGuid>
+   <variable>
+      <defaultValue>'Tello Task  Update'</defaultValue>
+      <description></description>
+      <id>96f6d3bd-7494-4a37-b8e8-b55b0a65b93a</id>
+      <masked>false</masked>
+      <name>nameBoardVar</name>
+   </variable>
+   <variable>
+      <defaultValue>['DONE', 'REVIEW', 'INPROGRESS', 'TODO']</defaultValue>
+      <description></description>
+      <id>a1d7c3f3-04dd-49d4-9905-aad1b4d15ab5</id>
+      <masked>false</masked>
+      <name>nameofListVar</name>
+   </variable>
+   <variable>
+      <defaultValue>['Api Setup', 'Login', 'Board Create', 'List Create', '&quot;Card Create&quot;', 'Logout']</defaultValue>
+      <description></description>
+      <id>1f676560-3fdc-4452-93c2-fcb9e3e5e75b</id>
+      <masked>false</masked>
+      <name>cardNameVar</name>
+   </variable>
+</TestCaseEntity>

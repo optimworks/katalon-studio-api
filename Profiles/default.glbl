@@ -64,4 +64,9 @@
       <initValue>'22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758'</initValue>
       <name>token</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['DONE', 'REVIEW', 'INPROGRESS', 'TODO']</initValue>
+      <name>nameofListVar</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

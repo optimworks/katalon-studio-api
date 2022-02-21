@@ -39,6 +39,15 @@ def static "sample.Common.findUserById"(
 }
 
 
+def static "trelloKeyword.ReusableMethods.concatenationWithSting"(
+    	Object text	
+     , 	Object value	) {
+    (new trelloKeyword.ReusableMethods()).concatenationWithSting(
+        	text
+         , 	value)
+}
+
+
 def static "trelloKeyword.ReusableMethods.getElementPropertyValue"(
     	Object resp	
      , 	Object value	) {
@@ -56,9 +65,11 @@ def static "trelloKeyword.ReusableMethods.printResponseText"(
 
 
 def static "trelloKeyword.ReusableMethods.verifyStatusCode"(
-    	Object resp	) {
+    	Object resp	
+     , 	Object statusCode	) {
     (new trelloKeyword.ReusableMethods()).verifyStatusCode(
-        	resp)
+        	resp
+         , 	statusCode)
 }
 
 
@@ -77,4 +88,18 @@ def static "trelloKeyword.ReusableMethods.verifyNotMatch"(
     (new trelloKeyword.ReusableMethods()).verifyNotMatch(
         	resp
          , 	text)
+}
+
+
+def static "trelloKeyword.ReusableMethods.getRandomSetofCharacter"(
+    	int length	) {
+    (new trelloKeyword.ReusableMethods()).getRandomSetofCharacter(
+        	length)
+}
+
+
+def static "trelloKeyword.ReusableMethods.listCreation"(
+    	Object idBoardVar	) {
+    (new trelloKeyword.ReusableMethods()).listCreation(
+        	idBoardVar)
 }
