@@ -20,7 +20,7 @@
       <name>nameofListVar</name>
    </variable>
    <variable>
-      <defaultValue>['Api Setup', 'Login', 'Board Create', 'List Create', '&quot;Card Create&quot;', 'Logout']</defaultValue>
+      <defaultValue>['Api Setup', 'Login', 'Board Create', 'List Create', 'Card Create', 'Logout']</defaultValue>
       <description></description>
       <id>1f676560-3fdc-4452-93c2-fcb9e3e5e75b</id>
       <masked>false</masked>

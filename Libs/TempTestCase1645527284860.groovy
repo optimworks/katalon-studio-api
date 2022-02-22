@@ -18,7 +18,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\Admin\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Trello Api Automation\\TASK -Updated\\20220221_164458\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\Admin\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Trello Api Automation\\TASK -Updated\\20220222_162444\\execution.properties')
 
 TestCaseMain.beforeStart()
 

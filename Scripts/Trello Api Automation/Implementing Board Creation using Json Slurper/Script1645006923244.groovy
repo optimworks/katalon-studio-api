@@ -25,7 +25,8 @@ print('\n\t'+response.getResponseText()+'\n\t\t')
 JsonSlurper js = new JsonSlurper()
 Map parseResponse = js.parseText(response.getResponseText())
 print('\n\t'+parseResponse.getClass()+'\n\t\t')
-//print('\n\t'+parseResponse.id)
+a = parseResponse.id
+print('\n\t'+a.getClass()+'\n\t\t')
 //print('\n\t'+parseResponse.name)		
 //print('\n\t'+parseResponse.idOrganization)
 //idBoard = parseResponse.id
