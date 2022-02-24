@@ -23,11 +23,10 @@ import java.util.Random;
 import internal.GlobalVariable
 
 public class ReusableMethods {
-	
+
 	@Keyword
 	def concatenationWithSting(text,value){
 		WS.concatenate([text, value] as String[], FailureHandling.CONTINUE_ON_FAILURE)
-	
 	}
 
 	@Keyword
@@ -45,24 +44,26 @@ public class ReusableMethods {
 	}
 
 	@Keyword
-	def verifyMatch(resp,text) {
-		WS.verifyMatch(resp,text, false, FailureHandling.CONTINUE_ON_FAILURE)
+	def verifyMatch(text,text1) {
+		WS.verifyMatch(text,text1, false, FailureHandling.CONTINUE_ON_FAILURE)
 	}
-	
+
 	@Keyword
-	def verifyNotMatch(resp,text) {
-		WS.verifyMatch(resp,text, false, FailureHandling.CONTINUE_ON_FAILURE)
+	def verifyNotMatch(text,text1) {
+		WS.verifyMatch(text,text1, false, FailureHandling.CONTINUE_ON_FAILURE)
 	}
-	
+
 	@Keyword
 	def getRandomSetofCharacter(int length){
 		String alphabet = RandomStringUtils.randomAlphabetic(length).toLowerCase()
 		return alphabet
-	}	
-	@Keyword
-	def listCreation(idBoardVar){
-		response = WS.sendRequest(findTestObject('Trello/List/Create a new list',[('urlList') : GlobalVariable.url_List, ('nameofList') : 'Bye', ('idBoard') : idBoardVar ]))
-        listIdVar = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response, 'id')
 	}
+	
+	@Keyword
+	def verifyEqual(text,text1){
+		WS.verifyEqual(text, text1, FailureHandling.STOP_ON_FAILURE)
+		
+	}
+	
 }
 

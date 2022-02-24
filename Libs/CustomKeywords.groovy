@@ -74,20 +74,20 @@ def static "trelloKeyword.ReusableMethods.verifyStatusCode"(
 
 
 def static "trelloKeyword.ReusableMethods.verifyMatch"(
-    	Object resp	
-     , 	Object text	) {
+    	Object text	
+     , 	Object text1	) {
     (new trelloKeyword.ReusableMethods()).verifyMatch(
-        	resp
-         , 	text)
+        	text
+         , 	text1)
 }
 
 
 def static "trelloKeyword.ReusableMethods.verifyNotMatch"(
-    	Object resp	
-     , 	Object text	) {
+    	Object text	
+     , 	Object text1	) {
     (new trelloKeyword.ReusableMethods()).verifyNotMatch(
-        	resp
-         , 	text)
+        	text
+         , 	text1)
 }
 
 
@@ -98,8 +98,10 @@ def static "trelloKeyword.ReusableMethods.getRandomSetofCharacter"(
 }
 
 
-def static "trelloKeyword.ReusableMethods.listCreation"(
-    	Object idBoardVar	) {
-    (new trelloKeyword.ReusableMethods()).listCreation(
-        	idBoardVar)
+def static "trelloKeyword.ReusableMethods.verifyEqual"(
+    	Object text	
+     , 	Object text1	) {
+    (new trelloKeyword.ReusableMethods()).verifyEqual(
+        	text
+         , 	text1)
 }

@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper
 
 
-////board creation
+////Board reation
 //response1 = WS.sendRequest(findTestObject('Trello/Board/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : nameBoardVar]))
 //CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response1,200)
 //idBoardVar = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response1, 'id')
@@ -28,8 +28,10 @@ import groovy.json.JsonSlurper
 //CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(BoardNameVar,nameBoardVar)
 //print('\n\t'+idBoardVar+'\n\t')
 
-listIdVar = ['6214752774eb6c5c59335115', '621475280b2d784e301c18c6','62147529f1c38a5f60ad0fea', '6214752a76bc65067e0f551d']
-cardIdVar = []
+listIdVar =['6215e111e403038ee51272bb', '6215e112acff2a6dbb5ae319', '6215e1130ad5af4f852643ab', '6215e113117feb5281cdf4fa']
+//cardIdVar = []
+//listIdVar = []
+//idBoardVar = 6215ddf61e9c24386f970e6d
 
 ////  List Creation
 //for(int i =0;i < 4;i++)
@@ -56,70 +58,58 @@ cardIdVar = []
 //cardIdVar.add(i,id)
 //print('\n\t'+id+'\n\t')
 //}
-//print('\n\t'+cardIdVar+'\n\t')
+////print('\n\t'+cardIdVar+'\n\t')
 //
 //
 //// Move Cards into different set of lists
 //k = 0
 //for(int j = 2; j>=0; j--)
 //{
-//  for(int i = k;i<k+2;i++)
+//  for(int i = k;i<K+2;i++)
 //  {
 //  response4 = WS.sendRequest(findTestObject('Move Cards to Respected List', [('urlList') : GlobalVariable.url_List,('idCard') : cardIdVar[i]
 //	  , ('idList') : listIdVar[j]]))
 //   CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response4,200)
-//   movedName = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response3, 'name')
+//   movedName = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response4, 'name')
+//   print('\n\t\n'+movedName+'\n\t\n')
 //   //CustomKeywords.'trelloKeyword.ReusableMethods.verifyNotMatch'(movedName,nameofListVar[3])
 //  }
 //  k+=2
 //}
 
-//  Apply assertion  wheather cards are moved into  respected list
-listOfCards = WS.sendRequest(findTestObject('Trello/Card/Get Cards in a particular List',[('urlList') : GlobalVariable.url_List, ('idList') : listIdVar[0]]))
-CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(listOfCards)
-CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(listOfCards,200)
-res=listOfCards.getResponseText()
-print('\n Response DATA - '+listOfCards)
-print('\n Response DATA - '+listOfCards.getResponseText())
-print('\n Response DATA TYPE - '+res.getClass())
-JsonSlurper js = new JsonSlurper()
-parseResponse = js.parseText(res)
 
-print('\n Response DATA TYPE - '+parseResponse.getClass())
-r=parseResponse.get(0)
-r2=parseResponse.get(1)
-
-print("First Card- "+parseResponse[0].name.getClass())
-print("First Card- "+parseResponse[0].name)
-
+//  Apply assertion to verify  wheather cards are moved into  respected list
 k = 0
 for(int j = 2; j>=0; j--)
 {
   for(int i = k;i<k+2;i++)
   {
-listOfCards = WS.sendRequest(findTestObject('Trello/Card/Get Cards in a particular List',[('urlList') : GlobalVariable.url_List, ('idList') : listIdVar[j]]))
-CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(listOfCards)
-CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(listOfCards,200)
-res=listOfCards.getResponseText()
-print('\n Response DATA - '+listOfCards)
-print('\n Response DATA - '+listOfCards.getResponseText())
-print('\n Response DATA TYPE - '+res.getClass())
-for(int p=0;p<2;p++)
-{
-getName = parseResponse[p].name
-if(getName == cardNameVar[k])
-{
-CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(getName,cardNameVar[k])
+    listOfCards = WS.sendRequest(findTestObject('Trello/Card/Get Cards in a particular List',[('urlList') : GlobalVariable.url_List, ('idList') : listIdVar[j]]))
+    CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(listOfCards)
+    CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(listOfCards,200)
+    res=listOfCards.getResponseText()
+//print('\n Response DATA - '+listOfCards)
+//print('\n Response DATA - '+listOfCards.getResponseText())
+//print('\n Response DATA TYPE - '+res.getClass())
+	
+	JsonSlurper js = new JsonSlurper()
+	parseResponse = js.parseText(res)
+	
+	//print('\n Response DATA TYPE - '+parseResponse.getClass())
+//	r=parseResponse.get(0)
+//	r2=parseResponse.get(1)
+    for(int p=0;p<2;p++)
+     {	 
+       getName = parseResponse[p].name
+	   print('\n\t Actual Data - '+getName+'\n\t')
+	   print('\n\t Expected Data - '+cardNameVar[i]+'\n\t')
+       CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(getName,cardNameVar[i])
+       print('\n\t\n'+getName+' named Card is Under List  '+k+'\n\t\n')         
 }
-else
-{
-	continue
 }
+k+=2
 }
 
-  }
-  k+=2
-}
 
 
 

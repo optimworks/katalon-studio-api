@@ -22,6 +22,48 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Trello Api Automation/TC09 Add an Attachment - Get the data from Attachment - Delete an Attachment</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>257c7751-9426-41b6-9b01-44f888275eef</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>116a98f0-aed6-4b28-83b0-094675394fbc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>eb74971f-16ea-426b-bea6-ca3b4be22a10</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6d7b89c8-c231-4143-a1ef-f842006895b6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>002d15a4-b89a-42a6-ae7a-1377f09d81f5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6987df7f-0940-4fb8-bd6c-dc4089914d2d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c7af7cff-c8ce-4ec2-8427-ef1f3dfbf968</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>6566f0e4-3c9e-4340-a793-4d3ca536398e</guid>
