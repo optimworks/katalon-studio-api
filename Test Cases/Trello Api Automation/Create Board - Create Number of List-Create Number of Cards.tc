@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create Board - Create Number of List-Create Number of Cards</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>da4a0330-3e09-4b8d-a321-c8b9c3ac4b85</testCaseGuid>
+   <variable>
+      <defaultValue>'TASK -2'</defaultValue>
+      <description></description>
+      <id>f654da35-eda1-4ef6-9997-a64b24714af6</id>
+      <masked>false</masked>
+      <name>nameBoardVar</name>
+   </variable>
+   <variable>
+      <defaultValue>['DONE', 'REVIEW', 'INPROGRESS', 'TODO']</defaultValue>
+      <description></description>
+      <id>5f9e4d83-ac1d-4eb3-a6d4-ef2a51a2b5bb</id>
+      <masked>false</masked>
+      <name>nameofListVar</name>
+   </variable>
+   <variable>
+      <defaultValue>['PYTHON', 'C', 'C++', 'GROOVY', 'JAVA']</defaultValue>
+      <description></description>
+      <id>ff97fa71-b7e7-4b69-bd7a-bfaceea7559c</id>
+      <masked>false</masked>
+      <name>cardNameVar</name>
+   </variable>
+</TestCaseEntity>

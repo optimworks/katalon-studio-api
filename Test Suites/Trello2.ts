@@ -21,7 +21,7 @@
       <guid>571e21da-e744-429f-83bd-9cfbee9768ed</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Trello Api Automation/TC09 Add an Attachment - Get the data from Attachment - Delete an Attachment</testCaseId>
+      <testCaseId>Test Cases/Trello Api Automation/TC09 Add an Attachment - Get the data from Attachment - Update an Attachment - Add a comment - Add a Label</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

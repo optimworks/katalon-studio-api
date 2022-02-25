@@ -19,63 +19,63 @@ import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper
 
 
-////Board reation
-//response1 = WS.sendRequest(findTestObject('Trello/Board/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : nameBoardVar]))
-//CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response1,200)
-//idBoardVar = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response1, 'id')
-//board_response = CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(response1)
+//Board reation
+response1 = WS.sendRequest(findTestObject('Trello/Board/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : nameBoardVar]))
+CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response1,200)
+idBoardVar = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response1, 'id')
+board_response = CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(response1)
 //BoardNameVar = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response1, 'name')
 //CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(BoardNameVar,nameBoardVar)
-//print('\n\t'+idBoardVar+'\n\t')
+print('\n\t'+idBoardVar+'\n\t')
 
-listIdVar =['6215e111e403038ee51272bb', '6215e112acff2a6dbb5ae319', '6215e1130ad5af4f852643ab', '6215e113117feb5281cdf4fa']
-//cardIdVar = []
-//listIdVar = []
+//listIdVar =['6215e111e403038ee51272bb', '6215e112acff2a6dbb5ae319', '6215e1130ad5af4f852643ab', '6215e113117feb5281cdf4fa']
+cardIdVar = []
+listIdVar = []
 //idBoardVar = 6215ddf61e9c24386f970e6d
 
-////  List Creation
-//for(int i =0;i < 4;i++)
-//{
-//response2 = WS.sendRequest(findTestObject('Trello/List/Create a new list',[('urlList') : GlobalVariable.url_List, ('nameofList') : nameofListVar[i], ('idBoard') : idBoardVar ]))
-//CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response2,200)
+//  List Creation
+for(int i =0;i < 4;i++)
+{
+response2 = WS.sendRequest(findTestObject('Trello/List/Create a new list',[('urlList') : GlobalVariable.url_List, ('nameofList') : nameofListVar[i], ('idBoard') : idBoardVar ]))
+CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response2,200)
 //listName = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response2, 'name')
 //CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(listName,nameofListVar[i])
-//id = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response2, 'id')
-//listIdVar.add(i,id)
-//print('\n\t'+id+'\n\t')
-//}
-//print('\n\t'+listIdVar+'\n\t')
-//
-//
-////  Cards Creation
-//for(int i =0;i < 6;i++)
-//{
-//response3 = WS.sendRequest(findTestObject('Object Repository/Trello/Card/Create Card',[('urlCard') : GlobalVariable.url_Card,('listId') : listIdVar[3], ('cardName') : cardNameVar[i]]))
-//CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response3,200)
+id = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response2, 'id')
+listIdVar.add(i,id)
+print('\n\t'+id+'\n\t')
+}
+print('\n\t'+listIdVar+'\n\t')
+
+
+//  Cards Creation
+for(int i =0;i < 6;i++)
+{
+response3 = WS.sendRequest(findTestObject('Object Repository/Trello/Card/Create Card',[('urlCard') : GlobalVariable.url_Card,('listId') : listIdVar[3], ('cardName') : cardNameVar[i]]))
+CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response3,200)
 //cardName = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response3, 'name')
 //CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(cardName,cardNameVar[i])
-//id = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response3, 'id')
-//cardIdVar.add(i,id)
-//print('\n\t'+id+'\n\t')
-//}
-////print('\n\t'+cardIdVar+'\n\t')
-//
-//
-//// Move Cards into different set of lists
-//k = 0
-//for(int j = 2; j>=0; j--)
-//{
-//  for(int i = k;i<K+2;i++)
-//  {
-//  response4 = WS.sendRequest(findTestObject('Move Cards to Respected List', [('urlList') : GlobalVariable.url_List,('idCard') : cardIdVar[i]
-//	  , ('idList') : listIdVar[j]]))
-//   CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response4,200)
-//   movedName = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response4, 'name')
-//   print('\n\t\n'+movedName+'\n\t\n')
-//   //CustomKeywords.'trelloKeyword.ReusableMethods.verifyNotMatch'(movedName,nameofListVar[3])
-//  }
-//  k+=2
-//}
+id = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response3, 'id')
+cardIdVar.add(i,id)
+print('\n\t'+id+'\n\t')
+}
+//print('\n\t'+cardIdVar+'\n\t')
+
+
+// Move Cards into different set of lists
+k = 0
+for(int j = 2; j>=0; j--)
+{
+  for(int i = k;i < k+2;i++)
+  {
+  response4 = WS.sendRequest(findTestObject('Move Cards to Respected List', [('urlList') : GlobalVariable.url_List,('idCard') : cardIdVar[i]
+	  , ('idList') : listIdVar[j]]))
+   CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response4,200)
+   movedName = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response4, 'name')
+   print('\n\t\n'+movedName+'\n\t\n')
+   //CustomKeywords.'trelloKeyword.ReusableMethods.verifyNotMatch'(movedName,nameofListVar[3])
+  }
+  k+=2
+}
 
 
 //  Apply assertion to verify  wheather cards are moved into  respected list

@@ -20,11 +20,13 @@ import groovy.json.JsonSlurper
 
 
 //Board creation
-response1 = WS.sendRequest(findTestObject('Trello/Board/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : nameBoardVar]))
-CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response1,200)
-idBoardVar = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response1, 'id')
-board_response = CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(response1)
-BoardNameVerify = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response1, 'name')
+createBoardResponse = WS.sendRequest(findTestObject('Trello/Board/Board Creation',[('urlBoard') : GlobalVariable.url_Board,('boardName') : nameBoardVar]))
+CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(createBoardResponse,200)
+CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(createBoardResponse)
+
+idBoardVar = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(createBoardResponse, 'id')
+board_response = CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(createBoardResponse)
+BoardNameVerify = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(createBoardResponse, 'name')
 CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(BoardNameVerify,BoardNameVerify)
 print('\n\t'+idBoardVar+'\n\t')
 
@@ -33,7 +35,6 @@ print('\n\t'+idBoardVar+'\n\t')
 //idCardVar = '62177ae95041a9474577a404'
 //listIdVar = '62177ae8d52cfe7004bf0d97' 
 //idAttachmentVar = '62177aeb456720475cf76b60'
-
 
 //  Create a List
 createListResponse = WS.sendRequest(findTestObject('Trello/List/Create a new list',[('urlList') : GlobalVariable.url_List, ('nameofList') : nameofListVar, ('idBoard') : idBoardVar ]))
@@ -60,11 +61,15 @@ createCardResponse = WS.sendRequest(findTestObject('Object Repository/Trello/Car
 CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(createCardResponse,200)
 CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(createCardResponse)
 
-cardNameVerify = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(createCardResponse, 'name')
-CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(cardNameVar,cardNameVerify)
-print('\n\t'+cardNameVar.getClass()+'\n\t')
 idCardVar = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(createCardResponse, 'id')
 print('\n\t'+idCardVar+'\n\t')
+
+cardResponseText = createCardResponse.getResponseText()
+JsonSlurper js5 = new JsonSlurper()
+cardparseResponse = js5.parseText(cardResponseText)
+
+cardNameVerify= cardparseResponse.name
+CustomKeywords.'trelloKeyword.ReusableMethods.verifyEqual'(cardNameVar,cardNameVerify)
 
 
 // Add attachment
@@ -73,6 +78,7 @@ CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(addAttachmentRes
 // Extracting a particular value from a response
 def idAttachmentVar = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(addAttachmentResponse, 'id')
 print('\n\t'+idAttachmentVar+'\n\t')
+
 
 // Get attachment
 getAttachmentResponse = WS.sendRequest(findTestObject('Trello/Attachment/Get an attachment',[('urlCard') : GlobalVariable.url_Card,('idCard') : idCardVar, ('idAttachment') : idAttachmentVar ]))
@@ -88,6 +94,7 @@ print('\n\t'+parseResponse.getClass()+'\n\t')
 getAttachedUrlVerify = parseResponse.url
 CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(urlAttachmentVar,getAttachedUrlVerify)
 
+
 // Update the Created attachment
 updateAttachmentResponse = WS.sendRequest(findTestObject('Object Repository/Trello/Attachment/Update the Created Attachments',[('urlCard') : GlobalVariable.url_Card,('idCard') : idCardVar, ('idAttachment') : idAttachmentVar, ('updateUrlAttachment') :  updateUrlAttachmentVar ]))
 CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(updateAttachmentResponse,200)
@@ -102,6 +109,7 @@ print('\n\t'+parseResponse.getClass()+'\n\t')
 updateAttachedUrlVerify = parseResponse.name
 CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(updateUrlAttachmentVar,updateAttachedUrlVerify)
 
+
 // Add a Comment to a Card
 addCommentResponse = WS.sendRequest(findTestObject('Trello/Comment on Card/Add a comment to a Card',[('urlCard') : GlobalVariable.url_Card,('idCard') : idCardVar, ('comment') : commentVar]))
 CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(addCommentResponse,200)
@@ -114,7 +122,7 @@ parseResponse = js3.parseText(addComment)
 
 print('\n\t'+parseResponse.getClass()+'\n\t')
 addCommentVerify = parseResponse.data.text
-CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(commentVar,addCommentVerify)
+CustomKeywords.'trelloKeyword.ReusableMethods.verifyEqual'(commentVar,addCommentVerify)
 
 
 //  Create a label in particular card
@@ -130,6 +138,7 @@ parseResponse = js4.parseText(addLabel)
 
 addLabelVerify = parseResponse.color
 CustomKeywords.'trelloKeyword.ReusableMethods.verifyEqual'(labelColorVar,addLabelVerify)
+
 
 //// Delete attachment
 //response6 = WS.sendRequest(findTestObject('Trello/Attachment/Delete an Attachement',[('urlCard') : GlobalVariable.url_Card, ('idAttachment') : idAttachmentVar,('idCard') : idCardVar ]))

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC09 Add an Attachment - Get the data from Attachment - Delete an Attachment</name>
+   <name>TC09 Add an Attachment - Get the data from Attachment - Update an Attachment - Add a comment - Add a Label</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>4687b463-954f-4973-a5cc-2cfc907192d3</testCaseGuid>
@@ -13,7 +13,7 @@
       <name>nameBoardVar</name>
    </variable>
    <variable>
-      <defaultValue>'My List'</defaultValue>
+      <defaultValue>'My List111'</defaultValue>
       <description></description>
       <id>116a98f0-aed6-4b28-83b0-094675394fbc</id>
       <masked>false</masked>
