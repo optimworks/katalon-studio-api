@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create Board - Create Lists-Create Cards - Add attachment to each of that card</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>da4a0330-3e09-4b8d-a321-c8b9c3ac4b85</testCaseGuid>
+   <variable>
+      <defaultValue>'TASK -2'</defaultValue>
+      <description></description>
+      <id>f654da35-eda1-4ef6-9997-a64b24714af6</id>
+      <masked>false</masked>
+      <name>nameBoardVar</name>
+   </variable>
+   <variable>
+      <defaultValue>['DONE', 'REVIEW', 'INPROGRESS', 'TODO']</defaultValue>
+      <description></description>
+      <id>5f9e4d83-ac1d-4eb3-a6d4-ef2a51a2b5bb</id>
+      <masked>false</masked>
+      <name>nameofListVar</name>
+   </variable>
+   <variable>
+      <defaultValue>['PYTHON', 'C', 'C++', 'GROOVY']</defaultValue>
+      <description></description>
+      <id>ff97fa71-b7e7-4b69-bd7a-bfaceea7559c</id>
+      <masked>false</masked>
+      <name>cardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'taco-confused'</defaultValue>
+      <description></description>
+      <id>6ae17d5f-519f-448c-88f5-b64ed80172a7</id>
+      <masked>false</masked>
+      <name>imageNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'10'</defaultValue>
+      <description></description>
+      <id>e8190ec3-0423-4a07-a770-1918efb89f30</id>
+      <masked>false</masked>
+      <name>topVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'20'</defaultValue>
+      <description></description>
+      <id>d39a048c-fe69-4a75-8251-2bcca272bbfe</id>
+      <masked>false</masked>
+      <name>leftVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'3'</defaultValue>
+      <description></description>
+      <id>70b29584-c3b7-4bd5-bf3a-b3f0627a3fa1</id>
+      <masked>false</masked>
+      <name>zIndexVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'Nullable: true,Format: 2023-02-26T10:17:09.789Z'</defaultValue>
+      <description></description>
+      <id>67d9148c-7f68-4ce6-83b5-3e48166348e2</id>
+      <masked>false</masked>
+      <name>dueDate</name>
+   </variable>
+   <variable>
+      <defaultValue>'Optimworks Checklist'</defaultValue>
+      <description></description>
+      <id>2e90c2b0-f691-4a4b-8604-c59926ddac01</id>
+      <masked>false</masked>
+      <name>checklistNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'yellow'</defaultValue>
+      <description></description>
+      <id>684151f8-e3db-49bd-9729-f047974ebed5</id>
+      <masked>false</masked>
+      <name>labelColorVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'Details of this card has been updated'</defaultValue>
+      <description></description>
+      <id>105f089b-e1e2-4d18-8c5e-daa11fafd41a</id>
+      <masked>false</masked>
+      <name>addDesciptionToCard</name>
+   </variable>
+</TestCaseEntity>

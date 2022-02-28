@@ -67,7 +67,7 @@ for(int j = 2; j>=0; j--)
 {
   for(int i = k;i < k+2;i++)
   {
-  response4 = WS.sendRequest(findTestObject('Move Cards to Respected List', [('urlList') : GlobalVariable.url_List,('idCard') : cardIdVar[i]
+  response4 = WS.sendRequest(findTestObject('Trello/Card/Move Cards to Respected List', [('urlList') : GlobalVariable.url_List,('idCard') : cardIdVar[i]
 	  , ('idList') : listIdVar[j]]))
    CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response4,200)
    movedName = CustomKeywords.'trelloKeyword.ReusableMethods.getElementPropertyValue'(response4, 'name')

@@ -120,7 +120,7 @@ getcardId(5,response11)
 // Move Card first set of 2 cards to Respected list
 //for(int j = 2; j>=0; j--)
 for(int i =0;i<2;i++)
-response12 = WS.sendRequest(findTestObject('Move Cards to Respected List', [('urlList') : GlobalVariable.url_List,('idCard') : cardIdVar[i]
+response12 = WS.sendRequest(findTestObject('Trello/Card/Move Cards to Respected List', [('urlList') : GlobalVariable.url_List,('idCard') : cardIdVar[i]
 	, ('idList') : listIdVar[2]]))
 CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response12,200)
 
@@ -128,14 +128,14 @@ CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response12,200)
 // Move Card second set of  2 cards to Respected list
 //for(int j = 2; j>=0; j--)
 for(int i =2;i<4;i++)
-response13 = WS.sendRequest(findTestObject('Move Cards to Respected List', [('urlList') : GlobalVariable.url_List,('idCard') : cardIdVar[i]
+response13 = WS.sendRequest(findTestObject('Trello/Card/Move Cards to Respected List', [('urlList') : GlobalVariable.url_List,('idCard') : cardIdVar[i]
 	, ('idList') : listIdVar[1]]))
 CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response13,200)
 
 // Move Card 3rd set 2 of cards to Respected list
 //for(int j = 2; j>=0; j--)
 for(int i =4;i<6;i++)
-response14 = WS.sendRequest(findTestObject('Move Cards to Respected List', [('urlList') : GlobalVariable.url_List,('idCard') : cardIdVar[i]
+response14 = WS.sendRequest(findTestObject('Trello/Card/Move Cards to Respected List', [('urlList') : GlobalVariable.url_List,('idCard') : cardIdVar[i]
 	, ('idList') : listIdVar[0]]))
 CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(response14,200)
 
