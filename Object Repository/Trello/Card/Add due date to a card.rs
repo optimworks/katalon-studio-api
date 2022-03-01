@@ -22,7 +22,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${urlCard}/${idCard}?key=${key}&amp;token=${token}&amp;due=${dueDate}</restUrl>
+   <restUrl>https://trello.com/1/cards/${idCard}?key=${key}&amp;token=${token}&amp;due=${dueDate}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -31,13 +31,6 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
-   <variables>
-      <defaultValue>GlobalVariable.url_Card</defaultValue>
-      <description></description>
-      <id>b1767af1-5c42-425c-9536-49b4ecb117a2</id>
-      <masked>false</masked>
-      <name>urlCard</name>
-   </variables>
    <variables>
       <defaultValue>GlobalVariable.key</defaultValue>
       <description></description>

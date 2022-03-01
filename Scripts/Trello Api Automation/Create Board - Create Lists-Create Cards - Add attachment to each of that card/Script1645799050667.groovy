@@ -82,8 +82,7 @@ for(int j =3;j >=0;j--)
 	}
 	k++
 	}
-
-		
+	
 //Add a sticker to Card
 addStickerResponse = WS.sendRequest(findTestObject('Trello/Sticker/Add a Sticker on Card',[('urlCard') : GlobalVariable.url_Card,('idCard') : cardIdVar[0] , ('imageName') : imageNameVar
 							   , ('top') : topVar , ('left') : leftVar , ('zIndex') : zIndexVar]))
@@ -91,18 +90,18 @@ CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(addStickerRespon
 CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(addStickerResponse)
 stickerResponseText = addStickerResponse.getResponseText()
 
-JsonSlurper js7 = new JsonSlurper()
-stickerparseResponse = js7.parseText(stickerResponseText)
+JsonSlurper js9 = new JsonSlurper()
+stickerparseResponse = js9.parseText(stickerResponseText)
 	
 stickerVerify= stickerparseResponse.image
 CustomKeywords.'trelloKeyword.ReusableMethods.verifyEqual'(imageNameVar,stickerVerify)
 
-////Add due date to a card
-//addDueDateResponse = WS.sendRequest(findTestObject('Trello/Card/Add due date to a card',[('urlCard') : GlobalVariable.url_Card,('idCard') : cardIdVar[1] , ('dueDate') : dueDate]))
-//CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(addDueDateResponse,200)
+//Add due date to a card
+addDueDateResponse = WS.sendRequest(findTestObject('Trello/Card/Add due date to a card',[('urlCard') : GlobalVariable.url_Card,('idCard') : cardIdVar[2] , ('dueDate') : dueDate]))
+CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(addDueDateResponse,200)
+CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(addDueDateResponse)
 
-
-// create a checklist
+// Create a checklist
 createChecklist = WS.sendRequest(findTestObject('Trello/Checklist on Card/Create Checklist on card', [('urlCard') : GlobalVariable.url_Card, ('idCard') : cardIdVar[2], ('checklistName') : checklistNameVar]))
 CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(createChecklist,200)
 CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(createChecklist)
@@ -129,6 +128,7 @@ parseResponse = js4.parseText(addLabel)
 addLabelVerify = parseResponse.color
 CustomKeywords.'trelloKeyword.ReusableMethods.verifyMatch'(labelColorVar,addLabelVerify)
 
+
 // Watch a Card
 watchResponse = WS.sendRequest(findTestObject('Trello/Card/Watch a card',
 	[('idCard') : cardIdVar[1]]))
@@ -150,11 +150,25 @@ CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(addDescription,2
 CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(addDescription)
 addDescriptionRespText = addDescription.getResponseText()
 
-JsonSlurper js = new JsonSlurper()
-parseResponse = js.parseText(addDescriptionRespText)
+JsonSlurper js7 = new JsonSlurper()
+parseResponse = js7.parseText(addDescriptionRespText)
 
 descriptionCardVerify = parseResponse.desc
 descriptionCardVerify1 = parseResponse.description
 print('\n\t'+descriptionCardVerify1.getClass()+'\n\t')
 print('\n\t'+descriptionCardVerify1+'\n\t')
 CustomKeywords.'trelloKeyword.ReusableMethods.verifyEqual'(addDesciptionToCard,descriptionCardVerify)
+
+//Delete a particular card
+deleteCard = WS.sendRequest(findTestObject('Object Repository/Trello/Card/Delete Card',[('urlCard') : GlobalVariable.url_Card,('idBoard') : idBoardVar, ('idCard') : cardIdVar[3]]))
+CustomKeywords.'trelloKeyword.ReusableMethods.verifyStatusCode'(deleteCard,200)
+CustomKeywords.'trelloKeyword.ReusableMethods.printResponseText'(deleteCard)
+deleteCardRespText = deleteCard.getResponseText()
+	
+JsonSlurper js10 = new JsonSlurper()
+parseResponse = js10.parseText(deleteCardRespText)
+
+deleteCardVerify = parseResponse.limits
+print('\n\t'+deleteCardVerify+'\n\t')
+print('\n\t'+deleteCardVerify.getClass()+'\n\t')
+
