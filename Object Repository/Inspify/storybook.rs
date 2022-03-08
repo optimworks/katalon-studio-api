@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>storybook</name>
+   <tag></tag>
+   <elementGuidId>5abaef91-b00d-47aa-b0da-5ea535101e5b</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer eyJraWQiOiI5TURveHhJZjhzdGVwaE55ajdYWCtSeGNUNXJUeHJmZVFpUVdsb2QwXC9WTT0iLCJhbGciOiJSUzI1NiJ9.eyJvcmlnaW5fanRpIjoiZDJjOThhNjYtMjE4MC00YjEwLWJiMTEtZTc1Mjc2YWU3YzdhIiwic3ViIjoiOTdiNmY0ZjItYzViMS00ZTRlLTkxYWUtMjVkNzg4MWNiYzEyIiwiZGV2aWNlX2tleSI6ImFwLXNvdXRoZWFzdC0xXzgzMDY0N2Q1LTAyZmYtNGFkMy04NmM4LTI1NWRjYjQ3YjFiZSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2NDY3MzEyNzEsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9zaGJhcXdRejIiLCJleHAiOjE2NDY3NzQ0NzEsImlhdCI6MTY0NjczMTI3MSwianRpIjoiNDQ4ODhkNzYtZTZlNC00MTkxLTk1MjMtODVmNTRhNWE3MjlhIiwiY2xpZW50X2lkIjoiNjljMnNic2hoYWl1NzAzdnBrMDhzbjZwdGsiLCJ1c2VybmFtZSI6InZpa2FzX2Fub3RoZXJpbnNwaWZ5Ml82In0.RPmVbJkvPTs2WBy7bPfxXbHfP2KqZl_LRwktcntgjK7lFRzoymqvtw4uhs2yuiMOKGwP94TYm9E17xjfsUzWDUYdBiSkwDqplAeU924SUNiIkM0QGgwmh0OyhHkNUmZU2sKCOYDxv_LneVaHUkzfWcWXiEwj7Nugu-6sBpvMcCzhacdWUdIwMIeLxFzgVgIea4x5EDNyDd2SYmwfTvXzyEIdLV81wREL5_Pl-xIlEvc1U_brnnmNPIrH2J2_7i_OhyAVBGP7g3jWfXcVnWz7cLqrhTkdodpJVNgcmu7cYmilhoOtY3knMmrfcLjP819X9I0DLwRJCfKdNF4Gv7DiwA&quot;,&quot;ExpiresIn&quot;:43200,&quot;IdToken&quot;:&quot;eyJraWQiOiJFTzgzbktPOTV2Nk90V1NDVXFBUUE4OEhxa0dwaHAzdXkxTlZBNkpJY3F3PSIsImFsZyI6IlJTMjU2In0.eyJvcmlnaW5fanRpIjoiZDJjOThhNjYtMjE4MC00YjEwLWJiMTEtZTc1Mjc2YWU3YzdhIiwic3ViIjoiOTdiNmY0ZjItYzViMS00ZTRlLTkxYWUtMjVkNzg4MWNiYzEyIiwiYXVkIjoiNjljMnNic2hoYWl1NzAzdnBrMDhzbjZwdGsiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE2NDY3MzEyNzEsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9zaGJhcXdRejIiLCJjb2duaXRvOnVzZXJuYW1lIjoidmlrYXNfYW5vdGhlcmluc3BpZnkyXzYiLCJleHAiOjE2NDY3NzQ0NzEsImlhdCI6MTY0NjczMTI3MSwianRpIjoiZWNmNTg5NzAtZjQ3ZC00M2I5LWIxYzktMWJkODlhODUwMDVlIiwiZW1haWwiOiJ2aWthc0BpbnNwaWZ5LmNvbSJ9.bX9fW02qQ08ohITYKfnVZewjW_fe4G2yfsZFv62iggqYonSwtsRtMecVEqWkL5OIOf7s57InUBU71kj-bgSbolCp_yjEzDrEPGMFUbJq8tk5fR0Kfy-5MhnO6ai77nS3Sc1C5SulYKm5IjAi7df6aBjvI4XBC-9zEKuCHrh4gzjEYcnTmwQ_O9DuI0yNZb9fKklVvn1rSGeqlUdr--Tii1fQSc7CPwGo8sEZ38-D1UDmgPZS0CiegLFrVFWWOfLA38mxNVrVxECwbzgCHZHr-cdxEfLhuLvwAb9H__Ae0-pcvf_oP9QmC7bmjAM69bAsA2CjgwtQmIq4WVydu0PPSg&quot;,&quot;RefreshToken&quot;:&quot;eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.o3-jhugNUoRxyDkzJcdk-fVsCyb-y09xcBBkllmoJXh39El2xBZJ33gaK-U1vd2kr-DU9ogHJeNfeooV1MBRfezf_Enne23j1FmgzU-MotNVHZhb3dCYzes6hwIJPzjVG7JAz6r7i-65OgarfoYe-9omcak4bK_VCV8xjqAaifwSHIuQ9UgLAy_TgiQSWMKGJUFUAzXnkrbDar2xud-_hUdU-gZuaI-4N8OlkjUr0HUSDRSwj3k9ScYKgS8HwqKUvxRoZMxJsT2gNBC1gtA-8cxzfB4GWybPdmvHZ8Jrl2brAKsprZYdhOEpLavV6sVWbff8VO23tTchoKyb33iMJQ.YFfBZvhXX8T8J3QQ.7rsz05D_WVjb_He7LquftwkorBgZ7lHS0BxGr3EovPaoT53HGoPtaGaphO5AQUkj1dnMgoEc82zMuqmELHzs5j-dKq9zShz0kabGU9Y4ne8f6gC7uKH07j0FF2fm7mBdFV-NuwKBC1zDIQQUhknLtk0l1SSmopsPcY3Fv9L8bkYiuvT1Fitx5wL5HCHxmAl9TwPvI0MG_u16jDFr9RwZuS8zTxwYg2noc8EpUu14OX_1rnriv5eahBbP2egOPJo_1_QyRKm1-wDU9hp2VMv998DhAJYGEDVtKOREkxJyq7Vgzxn5yZnnlPwTNQ6zmCh-NZ8HyXJsPaB1PFiam60OatJlz8-6HTDIt4YFIrd5hpjFcl76ZizzjVHxdoSthlbFscSGtUDX6m7-xo6mhbVVzEg9EOsJyh4g3IXDbCq0g266jhVlhEK0rjuHoOiBle9oFzGnEOc0yEJXoYsS3jwglDZx0PlozdoB7zbeNMGZv5nZO3n1WJe_8IB8wrUTIYZYIJfUVVAhp2xJubW-f1A5vwpL4cnMLHK8kEOFi4L8hindBVP8aSVle3Lx8GMAGmF3xtC6pKmSLtqzSnQm-xXaUd7zykpTWPHvk082TeaJzOoOvc7cSi3LnGj-ajUiONfnCONXO0EfTeKHPD-wfiW529sFbwWpZd-BNsWanGx1sEvgeJEqXkxBxc-1K5lZmXIJqSy2bGNz5_xj6j4zwkE6tm2My5W6ZSqfE1GIbdUUNa0O8EmfIaH2OmJbM-XZFbt5iIkfxlUBdqt6yY8sY1xHswwKkK7qNTqEBEnVWSM0LPonaXdf0nt_7BGW61AajPDZAOmd9WMOzV4IhlQNFUzoETfawwWdJ_kBXaa9qm2ZDro9Qa4riNzxFd6KhOzSeGGCkFJad_67l63aea8QkhWeAN8vBMHzcGlrbPFi2XeUondq0bKYhiExxsKUraxPtziHLtxuf0e3HrXKsq_b7HVKaDUfISnAABGtPPYD-8X9VLaPKBSAcWWNFq-xW6iKYNgYrIFdODu5GuoG2rWiiLk1E9i_M2oKJZP-Pv3qnsU3YOGb6v6ieZC814G1RB29sgCsVnq21bvnBH3Z10FBJO9WATz8uL7JkmnFq6275T1zSGxWGJ3W13PMPFKjqEQj5Qi5GZRjmBBQYGq-LLN2oSfV4OcY60kn7vI-UksZqdddMRgvmhHy3Bh98GS8Lyt-WB9NQmzgI4OblbA8X648F25EoiZdAa_SrXgF0sT12zN4ttHqHxfSwFbJQhzrzOQZL9G79WXrZFVhHKLV3Lx6JD8k-ZML5Upv_LcLqaOfv6SpJC69Si76Yy4B9vLD_CMjUxX-pxqZLZOJBc2ZiXC7EhGeLkI.ZNjKDRX0PP4pXQR-LhKung</value>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+   </httpHeaderProperties>
+   <katalonVersion>8.2.5</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>https://hmux9j27n4.execute-api.ap-southeast-1.amazonaws.com/dev/storybooksearch/v1</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <verificationScript>import static org.assertj.core.api.Assertions.*
+
+import com.kms.katalon.core.testobject.RequestObject
+import com.kms.katalon.core.testobject.ResponseObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webservice.verification.WSResponseManager
+
+import groovy.json.JsonSlurper
+import internal.GlobalVariable as GlobalVariable
+
+RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
+
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

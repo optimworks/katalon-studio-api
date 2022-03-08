@@ -55,6 +55,6 @@ WS.containsString(response5,nameofListVar1, false, FailureHandling.CONTINUE_ON_F
 def idList1Var = WS.getElementPropertyValue(response5, "id", FailureHandling.CONTINUE_ON_FAILURE)
 
 // Move all cards in a list
-response6 = WS.sendRequest(findTestObject('Object Repository/Trello/Move all Cards in a List',[('urlList') : GlobalVariable.url_List, ('idOldList') : listIdVar, ('idList1') : idList1Var,('idNewBoard') : idBoardMovedToVar ]))
+response6 = WS.sendRequest(findTestObject('Trello/Card/Move all Cards in a List',[('urlList') : GlobalVariable.url_List, ('idOldList') : listIdVar, ('idList1') : idList1Var,('idNewBoard') : idBoardMovedToVar ]))
 WS.verifyResponseStatusCode(response6, 200, FailureHandling.CONTINUE_ON_FAILURE)
 

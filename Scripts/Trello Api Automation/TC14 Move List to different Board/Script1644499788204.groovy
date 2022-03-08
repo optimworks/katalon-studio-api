@@ -44,7 +44,7 @@ def idBoardMovedToVar = WS.getElementPropertyValue(response4, "id", FailureHandl
 WS.containsString(response4, boardNameVar2, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 // Move List to a New Board
-response5 = WS.sendRequest(findTestObject('Object Repository/Trello/Move List to Board',[('urlList') : GlobalVariable.url_List, ('idList') : listIdVar, ('idBoardMovedTo') : idBoardMovedToVar, ]))
+response5 = WS.sendRequest(findTestObject('null',[('urlList') : GlobalVariable.url_List, ('idList') : listIdVar, ('idBoardMovedTo') : idBoardMovedToVar, ]))
 WS.verifyResponseStatusCode(response5, 200, FailureHandling.CONTINUE_ON_FAILURE)
 WS.containsString(response5,nameofListVar, false, FailureHandling.CONTINUE_ON_FAILURE)
 

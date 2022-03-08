@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Task - 1</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4bca7e33-259b-40de-8323-ae6d731d32a9</testCaseGuid>
+   <variable>
+      <defaultValue>'TATA IPL 2022'</defaultValue>
+      <description></description>
+      <id>c8d91b9c-5dc6-4328-9c6b-0bbf18ea8021</id>
+      <masked>false</masked>
+      <name>nameBoardVar</name>
+   </variable>
+   <variable>
+      <defaultValue>['SRH', 'MI', 'RCB', 'CSK']</defaultValue>
+      <description></description>
+      <id>ccc59b36-3f73-47a0-8719-994e9fdc630b</id>
+      <masked>false</masked>
+      <name>nameofListVar</name>
+   </variable>
+   <variable>
+      <defaultValue>['yellow', 'red', 'blue', 'orange']</defaultValue>
+      <description></description>
+      <id>de8b6463-87c9-4b2e-9bbf-d1f5290a3787</id>
+      <masked>false</masked>
+      <name>labelColorVar</name>
+   </variable>
+   <variable>
+      <defaultValue>['MS DHONI', 'ABD', 'SURYA KUMAR YADAV', 'KANEWILLAMSON', 'SURESH RAINA', 'VIRAT KOHLI', 'ROHIT SHARMA', 'BHUVANESHWAR KUMAR']</defaultValue>
+      <description></description>
+      <id>dcec887f-9ce5-4d4d-9524-a824f56b0e6e</id>
+      <masked>false</masked>
+      <name>cardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>['Chennai Super Kings (CSK) are a franchise cricket team based in Chennai, Tamil Nadu. They play in the Indian Premier League (IPL). Founded in 2008, the team plays its home matches at the M. A. Chidambaram Stadium in Chennai. The team is owned by Chennai Super Kings Cricket Ltd and India Cements is the major stakeholder. The team served a two-year suspension from the IPL starting July 2015 due to the involvement of their owners in the 2013 IPL betting case,[2] and won the title in its comeback season of 2018. The team is captained by Mahendra Singh Dhoni and coached by Stephen Fleming. They are the current defending champions, having won the 2021 IPL season. In January 2022, CSK became India\'s first unicorn sports enterprise.[3]', 'Royal Challengers Bangalore (often abbreviated as RCB) are a franchise cricket team based in Bangalore, Karnataka, that plays in the Indian Premier League (IPL). It was founded in 2008 by United Spirits and named after the company\'s liquor brand Royal Challenge. Since its inception, the team has played its home matches at the M. Chinnaswamy Stadium.[2]', 'Mumbai Indians are a franchise cricket team based in Mumbai, Maharashtra, that competes in the Indian Premier League. Founded in 2008, the team is owned by India\'s biggest conglomerate, Reliance Industries, through its 100% subsidiary IndiaWin Sports. Since its establishment, the team has played its home matches in the 33,108-capacity Wankhede Stadium in Mumbai.', 'Sunrisers Hyderabad (stylised as SunRisers Hyderabad, abbr. SRH) are a franchise cricket team based in Hyderabad, Telangana, India, that plays in the Indian Premier League (IPL).[3] The franchise is owned by Kalanithi Maran of the SUN Group and was founded in 2012 after the Hyderabad-based Deccan Chargers were terminated by the IPL.[4] The team is currently captained by Kane Williamson and coached by Trevor Bayliss.[5] Their primary home ground is the Rajiv Gandhi International Cricket Stadium, Hyderabad, which has capacity of 55,000.[6]']</defaultValue>
+      <description></description>
+      <id>1a5105e3-95d1-4391-a1c5-cca2fae311d5</id>
+      <masked>false</masked>
+      <name>addDesciptionToCard</name>
+   </variable>
+   <variable>
+      <defaultValue>['https://www.chennaisuperkings.com/CSK_WEB/index.html', 'https://www.royalchallengers.com/', 'https://www.mumbaiindians.com/', 'https://www.sunrisershyderabad.in/']</defaultValue>
+      <description></description>
+      <id>c58de0e3-24c9-432f-89f5-33db465135d9</id>
+      <masked>false</masked>
+      <name>urlAttachmentVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'https://trello-backgrounds.s3.amazonaws.com/SharedBackground/256x171/326864bd539a79f98b1de2cc4a26d200/photo-1644840379571-2a973eee0726.jpg'</defaultValue>
+      <description></description>
+      <id>a0493c7c-ae27-49e2-99d3-c0d5eced659c</id>
+      <masked>false</masked>
+      <name>urlBackground</name>
+   </variable>
+</TestCaseEntity>
