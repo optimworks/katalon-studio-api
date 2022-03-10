@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add an Attachment - Get the data from Attachment - Update an Attachment - Add a comment - Add a Label</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4687b463-954f-4973-a5cc-2cfc907192d3</testCaseGuid>
+   <variable>
+      <defaultValue>'Add an attach to card'</defaultValue>
+      <description></description>
+      <id>257c7751-9426-41b6-9b01-44f888275eef</id>
+      <masked>false</masked>
+      <name>nameBoardVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'My List111'</defaultValue>
+      <description></description>
+      <id>116a98f0-aed6-4b28-83b0-094675394fbc</id>
+      <masked>false</masked>
+      <name>nameofListVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'My card'</defaultValue>
+      <description></description>
+      <id>eb74971f-16ea-426b-bea6-ca3b4be22a10</id>
+      <masked>false</masked>
+      <name>cardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'https://www.youtube.com/'</defaultValue>
+      <description></description>
+      <id>6d7b89c8-c231-4143-a1ef-f842006895b6</id>
+      <masked>false</masked>
+      <name>urlAttachmentVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'https://www.google.com/'</defaultValue>
+      <description></description>
+      <id>002d15a4-b89a-42a6-ae7a-1377f09d81f5</id>
+      <masked>false</masked>
+      <name>updateUrlAttachmentVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'First Comment'</defaultValue>
+      <description></description>
+      <id>6987df7f-0940-4fb8-bd6c-dc4089914d2d</id>
+      <masked>false</masked>
+      <name>commentVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'red'</defaultValue>
+      <description></description>
+      <id>c7af7cff-c8ce-4ec2-8427-ef1f3dfbf968</id>
+      <masked>false</masked>
+      <name>labelColorVar</name>
+   </variable>
+</TestCaseEntity>

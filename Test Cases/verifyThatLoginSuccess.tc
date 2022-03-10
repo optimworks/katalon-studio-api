@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>verifyThatLoginSuccess</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e6a2af6a-becc-4917-a1c8-c432a19ff1ca</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC11 Add a label on Card - Get the data from Label- Remove the added Label</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c2834b72-c50c-4cfb-8b58-8c4c9fadc814</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>login into trello and then logout</description>
+   <name>TC02 Login - Board Creation - List Creation - Card Creation - logout</name>
+   <tag>trello,login->logout</tag>
+   <comment></comment>
+   <testCaseGuid>a5470083-39d7-4cbb-b904-771f3de91efa</testCaseGuid>
+   <variable>
+      <defaultValue>'Trello Api 1'</defaultValue>
+      <description></description>
+      <id>c78a90f8-b7c9-41de-919d-1796c0de3824</id>
+      <masked>false</masked>
+      <name>boardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'List1'</defaultValue>
+      <description></description>
+      <id>7197c796-2f25-48bf-8b90-f3da46db919f</id>
+      <masked>false</masked>
+      <name>nameofListVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'My card'</defaultValue>
+      <description></description>
+      <id>ce03a5af-f432-4f7f-acbc-65ee84ce1c03</id>
+      <masked>false</masked>
+      <name>cardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'nikhil.tadi@gmail.com'</defaultValue>
+      <description></description>
+      <id>c58a57f3-a4d2-4248-8add-687f00143127</id>
+      <masked>false</masked>
+      <name>emailVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'bunny007'</defaultValue>
+      <description></description>
+      <id>4b44071b-7b5b-4045-b6ad-ab717122c922</id>
+      <masked>false</masked>
+      <name>passwordVar</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04 Board - List - Card - Update Card Details</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b811402a-d411-40b9-9179-753eb2f2febf</testCaseGuid>
+   <variable>
+      <defaultValue>'Updated Card Details'</defaultValue>
+      <description></description>
+      <id>4e9ba5b9-676e-4c85-a89a-959fd8d1e2b7</id>
+      <masked>false</masked>
+      <name>boardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'My List'</defaultValue>
+      <description></description>
+      <id>5442f906-d0c8-4e35-8987-dd9bc9dc94f4</id>
+      <masked>false</masked>
+      <name>nameofListVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'My card'</defaultValue>
+      <description></description>
+      <id>4e2bebe1-7c35-42bf-93ae-9eec515e5b42</id>
+      <masked>false</masked>
+      <name>cardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'Update card name'</defaultValue>
+      <description></description>
+      <id>632ab75d-d461-4f5e-a300-7475da30e5af</id>
+      <masked>false</masked>
+      <name>updatedCardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'Details of this card has been updated'</defaultValue>
+      <description></description>
+      <id>70ea146a-a448-4cee-9d81-040958089d06</id>
+      <masked>false</masked>
+      <name>addDesciptionToCard</name>
+   </variable>
+</TestCaseEntity>

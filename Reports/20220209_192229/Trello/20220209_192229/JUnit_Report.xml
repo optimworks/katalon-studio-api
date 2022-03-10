@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Trello" time="31.532" tests="6" failures="0" errors="0">
+   <testsuite name="Trello" tests="6" failures="0" errors="0" time="31.532" skipped="0" timestamp="2022-02-09 19:22:38" hostname="Admin - DESKTOP-9GOD9GI" id="Test Suites/Trello">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Optimworks\\Katalone\\Api\\katalon-studio-api\\Reports\\20220209_192229\\Trello\\20220209_192229"/>
+         <property name="logFiles" value="D:\\Optimworks\\Katalone\\Api\\katalon-studio-api\\Reports\\20220209_192229\\Trello\\20220209_192229\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Admin - DESKTOP-9GOD9GI"/>
+         <property name="hostAddress" value="192.168.0.131"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.2.5.208"/>
+      </properties>
+      <testcase name="Test Cases/Trello Api Automation/TC08 Add a Sticker - Update a Sticker - Delete a Sticker" time="7.812" classname="Test Cases/Trello Api Automation/TC08 Add a Sticker - Update a Sticker - Delete a Sticker" status="PASSED">
+         <system-out><![CDATA[2022-02-09 19:22:38 - [TEST_CASE][PASSED] - Test Cases/Trello Api Automation/TC08 Add a Sticker - Update a Sticker - Delete a Sticker: Test Cases/Trello Api Automation/TC08 Add a Sticker - Update a Sticker - Delete a Sticker
+
+2022-02-09 19:22:39 - [TEST_STEP][PASSED] - boardNameVar = "Add Sticker to a Card": null
+
+2022-02-09 19:22:39 - [TEST_STEP][PASSED] - nameofListVar = "List of Sticker": null
+
+2022-02-09 19:22:39 - [TEST_STEP][PASSED] - cardNameVar = "taco sticker": null
+
+2022-02-09 19:22:39 - [TEST_STEP][PASSED] - imageNameVar = "taco-confused": null
+
+2022-02-09 19:22:39 - [TEST_STEP][PASSED] - topVar = 10: null
+
+2022-02-09 19:22:39 - [TEST_STEP][PASSED] - leftVar = 20: null
+
+2022-02-09 19:22:39 - [TEST_STEP][PASSED] - zIndexVar = 3: null
+
+2022-02-09 19:22:39 - [TEST_STEP][PASSED] - topUpdateVar = 70: null
+
+2022-02-09 19:22:39 - [TEST_STEP][PASSED] - leftUpdateVar = 40: null
+
+2022-02-09 19:22:39 - [TEST_STEP][PASSED] - zIndexUpdateVar = 3: null
+
+2022-02-09 19:22:39 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("Trello/Board Creation", ["urlBoard":url_Board, "boardName":boardNameVar])): Send request successfully
+
+2022-02-09 19:22:41 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\0.har
+
+2022-02-09 19:22:41 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:41 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response1, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:41 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:41 - [TEST_STEP][PASSED] - idBoardVar = getElementPropertyValue(response1, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:41 - [TEST_STEP][PASSED] - containsString(response1, boardNameVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:22:41 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:22:41 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("Trello/List/Create a new list", ["urlList":url_List, "nameofList":nameofListVar, "idBoard":idBoardVar])): Send request successfully
+
+2022-02-09 19:22:42 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\1.har
+
+2022-02-09 19:22:42 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:42 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response2, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:42 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:42 - [TEST_STEP][PASSED] - listIdVar = getElementPropertyValue(response2, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:42 - [TEST_STEP][PASSED] - containsString(response2, nameofListVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:22:42 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:22:42 - [TEST_STEP][PASSED] - response3 = sendRequest(findTestObject("Trello/Create card", ["urlCard":url_Card, "listId":listIdVar, "cardName":cardNameVar])): Send request successfully
+
+2022-02-09 19:22:43 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\2.har
+
+2022-02-09 19:22:43 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:43 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response3, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:43 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:43 - [TEST_STEP][PASSED] - idCardVar = getElementPropertyValue(response3, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:43 - [TEST_STEP][PASSED] - containsString(response3, cardNameVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:22:43 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:22:43 - [TEST_STEP][PASSED] - response4 = sendRequest(findTestObject("Trello/Sticker/Add a Sticker on Card", ["urlCard":url_Card, "idCard":idCardVar, "imageName":imageNameVar, "top":topVar, "left":leftVar, "zIndex":zIndexVar])): Send request successfully
+
+2022-02-09 19:22:44 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\3.har
+
+2022-02-09 19:22:44 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:44 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response4, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:44 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:44 - [TEST_STEP][PASSED] - idStickerVar = getElementPropertyValue(response4, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:44 - [TEST_STEP][PASSED] - containsString(response4, imageNameVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:22:44 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:22:44 - [TEST_STEP][PASSED] - response5 = sendRequest(findTestObject("Trello/Sticker/Update a Sticker on Card", ["urlCard":url_Card, "idCard":idCardVar, "idSticker":idStickerVar, "topUpdate":topUpdateVar, "leftUpdate":leftUpdateVar, "zIndexUpdate":zIndexUpdateVar])): Send request successfully
+
+2022-02-09 19:22:45 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\4.har
+
+2022-02-09 19:22:45 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:45 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response5, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:45 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:45 - [TEST_STEP][PASSED] - response6 = sendRequest(findTestObject("Trello/Sticker/Delete a Sticker on Card", ["urlCard":url_Card, "idCard":idCardVar, "idSticker":idStickerVar])): Send request successfully
+
+2022-02-09 19:22:46 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\5.har
+
+2022-02-09 19:22:46 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:46 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response6, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:46 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Trello Api Automation/TC09 Add an Attachment - Get the data from Attachment - Delete an Attachment" time="4.959" classname="Test Cases/Trello Api Automation/TC09 Add an Attachment - Get the data from Attachment - Delete an Attachment" status="PASSED">
+         <system-out><![CDATA[2022-02-09 19:22:46 - [TEST_CASE][PASSED] - Test Cases/Trello Api Automation/TC09 Add an Attachment - Get the data from Attachment - Delete an Attachment: Test Cases/Trello Api Automation/TC09 Add an Attachment - Get the data from Attachment - Delete an Attachment
+
+2022-02-09 19:22:46 - [TEST_STEP][PASSED] - deleteAttachmentRespMsg = "{"limits":{}}": null
+
+2022-02-09 19:22:46 - [TEST_STEP][PASSED] - urlAttachmentVar = "https://www.youtube.com/": null
+
+2022-02-09 19:22:46 - [TEST_STEP][PASSED] - boardNameVar = "Add an attach to card": null
+
+2022-02-09 19:22:46 - [TEST_STEP][PASSED] - nameofListVar = "My List": null
+
+2022-02-09 19:22:46 - [TEST_STEP][PASSED] - cardNameVar = "My card": null
+
+2022-02-09 19:22:46 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("Trello/Board Creation", ["urlBoard":url_Board, "boardName":boardNameVar])): Send request successfully
+
+2022-02-09 19:22:47 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\6.har
+
+2022-02-09 19:22:47 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:47 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response1, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:47 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:47 - [TEST_STEP][PASSED] - idBoardVar = getElementPropertyValue(response1, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:47 - [TEST_STEP][PASSED] - board_response = response1.getResponseText(): null
+
+2022-02-09 19:22:47 - [TEST_STEP][PASSED] - println("
+	" + board_response + "
+	"): null
+
+2022-02-09 19:22:47 - [TEST_STEP][PASSED] - containsString(response1, boardNameVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:22:47 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:22:47 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("Trello/List/Create a new list", ["urlList":url_List, "nameofList":nameofListVar, "idBoard":idBoardVar])): Send request successfully
+
+2022-02-09 19:22:48 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\7.har
+
+2022-02-09 19:22:48 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:48 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response2, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:48 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:48 - [TEST_STEP][PASSED] - containsString(response2, nameofListVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:22:48 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:22:48 - [TEST_STEP][PASSED] - listIdVar = getElementPropertyValue(response2, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:48 - [TEST_STEP][PASSED] - response3 = sendRequest(findTestObject("Trello/Create card", ["urlCard":url_Card, "listId":listIdVar, "cardName":cardNameVar])): Send request successfully
+
+2022-02-09 19:22:49 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\8.har
+
+2022-02-09 19:22:49 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:49 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response3, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:49 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:49 - [TEST_STEP][PASSED] - idCardVar = getElementPropertyValue(response3, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:49 - [TEST_STEP][PASSED] - card_response = response3.getResponseText(): null
+
+2022-02-09 19:22:49 - [TEST_STEP][PASSED] - println("
+	" + card_response + "
+	"): null
+
+2022-02-09 19:22:49 - [TEST_STEP][PASSED] - containsString(response3, cardNameVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:22:49 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:22:49 - [TEST_STEP][PASSED] - response4 = sendRequest(findTestObject("Trello/Attachment/Add an attachment to a Card", ["urlCard":url_Card, "idCard":idCardVar, "urlAttachment":urlAttachmentVar])): Send request successfully
+
+2022-02-09 19:22:50 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\9.har
+
+2022-02-09 19:22:50 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:50 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response4, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:50 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:50 - [TEST_STEP][PASSED] - idAttachmentVar = getElementPropertyValue(response4, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:50 - [TEST_STEP][PASSED] - containsString(response4, urlAttachmentVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:22:50 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:22:50 - [TEST_STEP][PASSED] - response5 = sendRequest(findTestObject("Trello/Attachment/Get an attachment", ["urlCard":url_Card, "idCard":idCardVar, "idAttachment":idAttachmentVar])): Send request successfully
+
+2022-02-09 19:22:50 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\10.har
+
+2022-02-09 19:22:50 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:50 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response5, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:50 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:50 - [TEST_STEP][PASSED] - containsString(response5, urlAttachmentVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:22:50 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:22:50 - [TEST_STEP][PASSED] - response6 = sendRequest(findTestObject("Trello/Attachment/Delete an Attachement", ["urlCard":url_Card, "idAttachment":idAttachmentVar, "idCard":idCardVar])): Send request successfully
+
+2022-02-09 19:22:51 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\11.har
+
+2022-02-09 19:22:51 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:51 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response6, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:51 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Trello Api Automation/TC10 Add Comment on Card - Update a Comment - Delete a Comment" time="5.209" classname="Test Cases/Trello Api Automation/TC10 Add Comment on Card - Update a Comment - Delete a Comment" status="PASSED">
+         <system-out><![CDATA[2022-02-09 19:22:51 - [TEST_CASE][PASSED] - Test Cases/Trello Api Automation/TC10 Add Comment on Card - Update a Comment - Delete a Comment: Test Cases/Trello Api Automation/TC10 Add Comment on Card - Update a Comment - Delete a Comment
+
+2022-02-09 19:22:51 - [TEST_STEP][PASSED] - boardNameVar = "Add Comment on a Card": null
+
+2022-02-09 19:22:51 - [TEST_STEP][PASSED] - nameofListVar = "List": null
+
+2022-02-09 19:22:51 - [TEST_STEP][PASSED] - cardNameVar = "Comment": null
+
+2022-02-09 19:22:51 - [TEST_STEP][PASSED] - commentVar = "This is the comment added to this card": null
+
+2022-02-09 19:22:51 - [TEST_STEP][PASSED] - commentUpdateVar = "This is the updated comment added to this card": null
+
+2022-02-09 19:22:51 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("Trello/Board Creation", ["urlBoard":url_Board, "boardName":boardNameVar])): Send request successfully
+
+2022-02-09 19:22:52 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\12.har
+
+2022-02-09 19:22:52 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:52 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response1, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:52 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:52 - [TEST_STEP][PASSED] - idBoardVar = getElementPropertyValue(response1, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:52 - [TEST_STEP][PASSED] - containsString(response1, boardNameVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:22:52 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:22:52 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("Trello/List/Create a new list", ["urlList":url_List, "nameofList":nameofListVar, "idBoard":idBoardVar])): Send request successfully
+
+2022-02-09 19:22:53 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\13.har
+
+2022-02-09 19:22:53 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:53 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response2, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:53 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:53 - [TEST_STEP][PASSED] - listIdVar = getElementPropertyValue(response2, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:53 - [TEST_STEP][PASSED] - containsString(response2, nameofListVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:22:53 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:22:53 - [TEST_STEP][PASSED] - response3 = sendRequest(findTestObject("Trello/Create card", ["urlCard":url_Card, "listId":listIdVar, "cardName":cardNameVar])): Send request successfully
+
+2022-02-09 19:22:54 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\14.har
+
+2022-02-09 19:22:54 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:54 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response3, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:54 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:54 - [TEST_STEP][PASSED] - idCardVar = getElementPropertyValue(response3, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:54 - [TEST_STEP][PASSED] - containsString(response3, cardNameVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:22:54 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:22:54 - [TEST_STEP][PASSED] - response4 = sendRequest(findTestObject("Trello/Comment on Card/Add a comment to a Card", ["urlCard":url_Card, "idCard":idCardVar, "comment":commentVar])): Send request successfully
+
+2022-02-09 19:22:55 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\15.har
+
+2022-02-09 19:22:55 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:55 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response4, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:55 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:55 - [TEST_STEP][PASSED] - containsString(response4, commentVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:22:55 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:22:55 - [TEST_STEP][PASSED] - Data = response4.getResponseText(): null
+
+2022-02-09 19:22:55 - [TEST_STEP][PASSED] - print("
+	" + Data + "
+	"): null
+
+2022-02-09 19:22:55 - [TEST_STEP][PASSED] - idActionVar = getElementPropertyValue(response4, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:55 - [TEST_STEP][PASSED] - response5 = sendRequest(findTestObject("Trello/Comment on Card/Update a comment on a card", ["urlCard":url_Card, "idCard":idCardVar, "commentUpdate":commentUpdateVar, "idAction":idActionVar])): Send request successfully
+
+2022-02-09 19:22:56 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\16.har
+
+2022-02-09 19:22:56 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:56 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response5, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:56 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:56 - [TEST_STEP][PASSED] - containsString(response5, commentUpdateVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:22:56 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:22:56 - [TEST_STEP][PASSED] - response6 = sendRequest(findTestObject("Trello/Comment on Card/Delete a comment on a card", ["urlCard":url_Card, "idCard":idCardVar, "idAction":idActionVar])): Send request successfully
+
+2022-02-09 19:22:56 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\17.har
+
+2022-02-09 19:22:56 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:56 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response6, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:56 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Trello Api Automation/TC11 Add a label on Card - Get the data from Label- Remove the added Label" time="5.086" classname="Test Cases/Trello Api Automation/TC11 Add a label on Card - Get the data from Label- Remove the added Label" status="PASSED">
+         <system-out><![CDATA[2022-02-09 19:22:56 - [TEST_CASE][PASSED] - Test Cases/Trello Api Automation/TC11 Add a label on Card - Get the data from Label- Remove the added Label: Test Cases/Trello Api Automation/TC11 Add a label on Card - Get the data from Label- Remove the added Label
+
+2022-02-09 19:22:57 - [TEST_STEP][PASSED] - labelColorVar = "yellow": null
+
+2022-02-09 19:22:57 - [TEST_STEP][PASSED] - deleteParticularLabelRespMsg = "{"_value":null}": null
+
+2022-02-09 19:22:57 - [TEST_STEP][PASSED] - boardNameVar = "Add Label to a Card ": null
+
+2022-02-09 19:22:57 - [TEST_STEP][PASSED] - nameofListVar = "List1": null
+
+2022-02-09 19:22:57 - [TEST_STEP][PASSED] - cardNameVar = "My card": null
+
+2022-02-09 19:22:57 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("Trello/Board Creation", ["urlBoard":url_Board, "boardName":boardNameVar])): Send request successfully
+
+2022-02-09 19:22:57 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\18.har
+
+2022-02-09 19:22:57 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:57 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response1, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:57 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:57 - [TEST_STEP][PASSED] - idBoardVar = getElementPropertyValue(response1, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:57 - [TEST_STEP][PASSED] - board_response = response1.getResponseText(): null
+
+2022-02-09 19:22:57 - [TEST_STEP][PASSED] - println("
+	" + board_response + "
+	"): null
+
+2022-02-09 19:22:57 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("Trello/List/Create a new list", ["urlList":url_List, "nameofList":nameofListVar, "idBoard":idBoardVar])): Send request successfully
+
+2022-02-09 19:22:58 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\19.har
+
+2022-02-09 19:22:58 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response2, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:58 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:58 - [TEST_STEP][PASSED] - listIdVar = getElementPropertyValue(response2, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:58 - [TEST_STEP][PASSED] - response3 = sendRequest(findTestObject("Trello/Create card", ["urlCard":url_Card, "listId":listIdVar, "cardName":cardNameVar])): Send request successfully
+
+2022-02-09 19:22:59 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\20.har
+
+2022-02-09 19:22:59 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:22:59 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response3, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:22:59 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:22:59 - [TEST_STEP][PASSED] - card_response = response3.getResponseText(): null
+
+2022-02-09 19:22:59 - [TEST_STEP][PASSED] - println("
+	" + card_response + "
+	"): null
+
+2022-02-09 19:22:59 - [TEST_STEP][PASSED] - cardIdVar = getElementPropertyValue(response3, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:22:59 - [TEST_STEP][PASSED] - response4 = sendRequest(findTestObject("Trello/Label on Card/Create a Label on Card", ["urlCard":url_Card, "cardId":cardIdVar, "labelColor":labelColorVar])): Send request successfully
+
+2022-02-09 19:23:00 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\21.har
+
+2022-02-09 19:23:00 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:23:00 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response4, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:23:00 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:23:00 - [TEST_STEP][PASSED] - containsString(response4, labelColorVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:23:00 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:23:00 - [TEST_STEP][PASSED] - labelIdVar = getElementPropertyValue(response4, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:23:00 - [TEST_STEP][PASSED] - response5 = sendRequest(findTestObject("Trello/Label on Card/Get a data from Label on Card", ["urlCard":url_Card, "cardId":cardIdVar, "labelId":labelIdVar])): Send request successfully
+
+2022-02-09 19:23:01 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\22.har
+
+2022-02-09 19:23:01 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:23:01 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response5, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:23:01 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:23:01 - [TEST_STEP][PASSED] - response6 = sendRequest(findTestObject("Trello/Label on Card/Delete a Label on Card", ["urlCard":url_Card, "labelId":labelIdVar, "cardId":cardIdVar, "labelColor":labelColorVar])): Send request successfully
+
+2022-02-09 19:23:01 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\23.har
+
+2022-02-09 19:23:01 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:23:01 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response6, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:23:01 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Trello Api Automation/TC12 Create a Label on Board - Update the Label - Delete the Label" time="3.496" classname="Test Cases/Trello Api Automation/TC12 Create a Label on Board - Update the Label - Delete the Label" status="PASSED">
+         <system-out><![CDATA[2022-02-09 19:23:01 - [TEST_CASE][PASSED] - Test Cases/Trello Api Automation/TC12 Create a Label on Board - Update the Label - Delete the Label: Test Cases/Trello Api Automation/TC12 Create a Label on Board - Update the Label - Delete the Label
+
+2022-02-09 19:23:02 - [TEST_STEP][PASSED] - labelColorVar = "yellow": null
+
+2022-02-09 19:23:02 - [TEST_STEP][PASSED] - deleteParticularLabelRespMsg = "{"_value":null}": null
+
+2022-02-09 19:23:02 - [TEST_STEP][PASSED] - boardNameVar = "Create a Label on a Board ": null
+
+2022-02-09 19:23:02 - [TEST_STEP][PASSED] - labelNameVar = "This is label": null
+
+2022-02-09 19:23:02 - [TEST_STEP][PASSED] - updatedNameVar = "Updated name label": null
+
+2022-02-09 19:23:02 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("Trello/Board Creation", ["urlBoard":url_Board, "boardName":boardNameVar])): Send request successfully
+
+2022-02-09 19:23:02 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\24.har
+
+2022-02-09 19:23:02 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:23:02 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response1, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:23:02 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:23:02 - [TEST_STEP][PASSED] - containsString(response1, boardNameVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:23:02 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:23:02 - [TEST_STEP][PASSED] - idBoardVar = getElementPropertyValue(response1, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:23:02 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("Trello/Label on Board/Create a Label on Board", ["urlBoard":url_Board, "idBoard":idBoardVar, "name":labelNameVar, "color":labelColorVar])): Send request successfully
+
+2022-02-09 19:23:03 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\25.har
+
+2022-02-09 19:23:03 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:23:03 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response2, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:23:03 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:23:03 - [TEST_STEP][PASSED] - containsString(response2, labelColorVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:23:03 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:23:03 - [TEST_STEP][PASSED] - labelIdVar = getElementPropertyValue(response2, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:23:03 - [TEST_STEP][PASSED] - response3 = sendRequest(findTestObject("Trello/Label on Board/Update the Created Label on a Board", ["idLabel":labelIdVar, "updatedName":updatedNameVar])): Send request successfully
+
+2022-02-09 19:23:04 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\26.har
+
+2022-02-09 19:23:04 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:23:04 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response3, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:23:04 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:23:04 - [TEST_STEP][PASSED] - containsString(response3, updatedNameVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:23:04 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:23:04 - [TEST_STEP][PASSED] - response4 = sendRequest(findTestObject("Trello/Label on Board/Delete the Created Label", ["idLabel":labelIdVar])): Send request successfully
+
+2022-02-09 19:23:05 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\27.har
+
+2022-02-09 19:23:05 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:23:05 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response4, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:23:05 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Trello Api Automation/TC13 Create a Webhook" time="4.529" classname="Test Cases/Trello Api Automation/TC13 Create a Webhook" status="PASSED">
+         <system-out><![CDATA[2022-02-09 19:23:05 - [TEST_CASE][PASSED] - Test Cases/Trello Api Automation/TC13 Create a Webhook: Test Cases/Trello Api Automation/TC13 Create a Webhook
+
+2022-02-09 19:23:05 - [TEST_STEP][PASSED] - boardNameVar = "Trello Board Creation ": null
+
+2022-02-09 19:23:05 - [TEST_STEP][PASSED] - nameofListVar = "My List": null
+
+2022-02-09 19:23:05 - [TEST_STEP][PASSED] - cardNameVar = "My card": null
+
+2022-02-09 19:23:05 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("Trello/Board Creation", ["urlBoard":url_Board, "boardName":boardNameVar])): Send request successfully
+
+2022-02-09 19:23:06 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\28.har
+
+2022-02-09 19:23:06 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:23:06 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response1, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:23:06 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:23:06 - [TEST_STEP][PASSED] - idBoardVar = getElementPropertyValue(response1, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:23:06 - [TEST_STEP][PASSED] - board_response = response1.getResponseText(): null
+
+2022-02-09 19:23:06 - [TEST_STEP][PASSED] - println("
+	" + board_response + "
+	"): null
+
+2022-02-09 19:23:06 - [TEST_STEP][PASSED] - containsString(response1, boardNameVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:23:06 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:23:06 - [TEST_STEP][PASSED] - response4 = sendRequest(findTestObject("Trello/Webhook/Create a webhook", ["idBoard":idBoardVar])): Send request successfully
+
+2022-02-09 19:23:07 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\29.har
+
+2022-02-09 19:23:07 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:23:07 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response4, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:23:07 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:23:07 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("Trello/List/Create a new list", ["urlList":url_List, "nameofList":nameofListVar, "idBoard":idBoardVar])): Send request successfully
+
+2022-02-09 19:23:09 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\30.har
+
+2022-02-09 19:23:09 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:23:09 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response2, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:23:09 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:23:09 - [TEST_STEP][PASSED] - containsString(response2, nameofListVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:23:09 - [MESSAGE][PASSED] - Check contain string successfully
+
+2022-02-09 19:23:09 - [TEST_STEP][PASSED] - listIdVar = getElementPropertyValue(response2, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:23:09 - [TEST_STEP][PASSED] - response3 = sendRequest(findTestObject("Trello/Create card", ["urlCard":url_Card, "listId":listIdVar, "cardName":cardNameVar])): Send request successfully
+
+2022-02-09 19:23:09 - [MESSAGE][INFO] - HAR: D:\Optimworks\Katalone\Api\katalon-studio-api\Reports\20220209_192229\Trello\20220209_192229\requests\main\31.har
+
+2022-02-09 19:23:09 - [MESSAGE][PASSED] - Send request successfully
+
+2022-02-09 19:23:09 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response3, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2022-02-09 19:23:09 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-02-09 19:23:09 - [TEST_STEP][PASSED] - idCardVar = getElementPropertyValue(response3, "id", CONTINUE_ON_FAILURE): null
+
+2022-02-09 19:23:09 - [TEST_STEP][PASSED] - card_response = response3.getResponseText(): null
+
+2022-02-09 19:23:09 - [TEST_STEP][PASSED] - println("
+	" + card_response + "
+	"): null
+
+2022-02-09 19:23:09 - [TEST_STEP][PASSED] - containsString(response3, cardNameVar, false, CONTINUE_ON_FAILURE): Check contain string successfully
+
+2022-02-09 19:23:09 - [MESSAGE][PASSED] - Check contain string successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-02-09 19:22:38 - [TEST_SUITE][PASSED] - Trello: Test Cases/Trello Api Automation/TC13 Create a Webhook]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

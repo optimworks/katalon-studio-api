@@ -6,22 +6,67 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://sample-web-service-aut.herokuapp.com'</initValue>
-      <name>baseUrl</name>
+      <initValue>'https://staging.sonnenspiele.de/alt/api/user/login'</initValue>
+      <name>stg_url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>200</initValue>
-      <name>successCode</name>
+      <initValue>''</initValue>
+      <name>stgSonnenspieleAuthToken</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>0</initValue>
-      <name>globalId</name>
+      <initValue>'sriramvasa12@yopmail.com'</initValue>
+      <name>email_sonnenspiele</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'akhil'</initValue>
-      <name>userName</name>
+      <initValue>'Test#12345'</initValue>
+      <name>password_sonnenspiele</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'nikhil@yopmail.com'</initValue>
+      <name>email_fail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Test#123'</initValue>
+      <name>password_fail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://trello.com'</initValue>
+      <name>trello_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://api.trello.com/1/cards'</initValue>
+      <name>url_Card</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://api.trello.com/1/lists'</initValue>
+      <name>url_List</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://api.trello.com/1/boards'</initValue>
+      <name>url_Board</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'87a4904ed7d712ca1bc346ae43515631'</initValue>
+      <name>key</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'22145b645f529838e731eb82a289d8283e1a75aac36464b960dce222c6f80758'</initValue>
+      <name>token</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['DONE', 'REVIEW', 'INPROGRESS', 'TODO']</initValue>
+      <name>nameofListVar</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

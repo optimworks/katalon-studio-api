@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TASK</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a4e30a41-8241-4a54-8006-c0818eb969b2</testCaseGuid>
+   <variable>
+      <defaultValue>'Trello Task\r\n'</defaultValue>
+      <description></description>
+      <id>68aea6aa-2747-4997-91bb-d0650a9e6962</id>
+      <masked>false</masked>
+      <name>nameBoardVar</name>
+   </variable>
+   <variable>
+      <defaultValue>['DONE', 'REVIEW', 'INPROGRESS', 'TODO']</defaultValue>
+      <description></description>
+      <id>5806aa21-e77e-4eb8-8376-526f0f8c3399</id>
+      <masked>false</masked>
+      <name>nameofListVar</name>
+   </variable>
+   <variable>
+      <defaultValue>['Api Setup', 'Login', 'Board Creation', 'List Creation', 'Card Creation', 'Logout']</defaultValue>
+      <description></description>
+      <id>fa7c38f4-41bd-471f-996d-2617904fc33a</id>
+      <masked>false</masked>
+      <name>nameofCardsVar</name>
+   </variable>
+</TestCaseEntity>

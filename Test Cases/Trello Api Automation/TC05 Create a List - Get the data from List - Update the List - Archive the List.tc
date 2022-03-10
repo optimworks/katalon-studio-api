@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC05 Create a List - Get the data from List - Update the List - Archive the List</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bbd323ef-74c1-410d-a8b0-a8e31719c5f6</testCaseGuid>
+   <variable>
+      <defaultValue>'Update the List'</defaultValue>
+      <description></description>
+      <id>21ae3758-08dd-4401-9d52-13f7ca1f3008</id>
+      <masked>false</masked>
+      <name>boardNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'List'</defaultValue>
+      <description></description>
+      <id>3fbeae2e-cdee-4eee-8422-81ad4b9abc41</id>
+      <masked>false</masked>
+      <name>nameofListVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'List name updated'</defaultValue>
+      <description></description>
+      <id>682e75b6-d96c-4fbc-8dc6-6edaacc4acb5</id>
+      <masked>false</masked>
+      <name>updateNameVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'&quot;name&quot;:&quot;List1&quot;'</defaultValue>
+      <description></description>
+      <id>ee63cbda-99c1-4d8a-919b-941c8cca3ebb</id>
+      <masked>false</masked>
+      <name>createListRespMsg</name>
+   </variable>
+   <variable>
+      <defaultValue>'&quot;closed&quot;:true'</defaultValue>
+      <description></description>
+      <id>9208c904-ba29-460c-aa77-2b2f84b88e74</id>
+      <masked>false</masked>
+      <name>archiveListRespMsg</name>
+   </variable>
+</TestCaseEntity>

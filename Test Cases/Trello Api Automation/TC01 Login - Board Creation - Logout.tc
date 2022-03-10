@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01 Login - Board Creation - Logout</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>37385a48-132c-47f3-9951-55bb923fb792</testCaseGuid>
+   <variable>
+      <defaultValue>'nikhil.tadi@gmail.com'</defaultValue>
+      <description></description>
+      <id>d22ec6f4-33f8-4962-a812-ea8628883b83</id>
+      <masked>false</masked>
+      <name>emailVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'bunny007'</defaultValue>
+      <description></description>
+      <id>51c593d2-03aa-4753-a7de-8e67ecffeb8f</id>
+      <masked>false</masked>
+      <name>passwordVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'Board     '</defaultValue>
+      <description></description>
+      <id>95e9ccf7-4ff6-4225-a170-1658ac878851</id>
+      <masked>false</masked>
+      <name>nameBoard</name>
+   </variable>
+   <variable>
+      <defaultValue>'List'</defaultValue>
+      <description></description>
+      <id>09b5ed25-f90c-4f95-b277-87fc1246858c</id>
+      <masked>false</masked>
+      <name>nameList</name>
+   </variable>
+</TestCaseEntity>

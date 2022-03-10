@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC15 Move all Cards in List to different Board</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4412bb1e-843f-4e78-a6ab-8c1a9d499962</testCaseGuid>
+</TestCaseEntity>
